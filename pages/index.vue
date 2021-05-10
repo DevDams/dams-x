@@ -1,7 +1,7 @@
 <template>
   <div id="target">
     <div data-scroll-container>
-      <div data-scroll-section class=".home container mx-auto h-screen w-screen bg-black text-white">
+      <div data-scroll-section class=".home container mx-auto h-screen w-screen">
         <h1 class="text-6xl text-green-600">Hello</h1>
         <h1>Bonjour</h1>
       </div>
