@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <label class="switch relative block">
-        <input type="checkbox">
+        <input type="checkbox" class="check" @change="dark">
         <span class="slider round absolute top-0 left-0 right-0 bottom-0 bg-white border-2 border-myblack"></span>
       </label>
     </div>
@@ -10,7 +10,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    dark () {
+      document.body.classList.toggle('dark')
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -41,6 +47,7 @@ export default {}
 
 input:checked + .slider {
   background-color: black;
+  border: 2px solid white;
 }
 
 input:checked + .slider::before {

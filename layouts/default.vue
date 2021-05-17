@@ -1,9 +1,9 @@
 <template>
   <div class="noise-bg">
     <div class="bg-color">
-      <Navbar class="fixed top-0" />
+      <Navbar class="navbar fixed top-0" />
       <Nuxt />
-      <ToggleButton class="absolute bottom-20 left-32" />
+      <ToggleButton class="absolute bottom-16 left-32" />
     </div>
   </div>
 </template>
@@ -24,6 +24,27 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  transition: .3s all ease-out;
+}
+
+body.dark {
+  background-color: #131313;
+  color: rgb(195, 195, 195);
+}
+
+body.dark h1 {
+  color: white;
+}
+
+body.dark .navbar {
+  background-color: black;
+}
+
+body.dark svg {
+  background-color: white;
 }
 
 .noise-bg::before {
