@@ -1,8 +1,9 @@
 <template>
   <div class="noise-bg">
     <div class="bg-color">
-      <Navbar />
+      <Navbar class="fixed top-0" />
       <Nuxt />
+      <ToggleButton class="absolute bottom-20 left-32" />
     </div>
   </div>
 </template>
@@ -24,6 +25,7 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
 .noise-bg::before {
   content: '';
   position: fixed;
