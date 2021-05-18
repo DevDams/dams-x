@@ -46,6 +46,7 @@
 <script>
 import LocomotiveScroll from 'locomotive-scroll'
 export default {
+  trasition: 'page',
   mounted () {
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
@@ -59,7 +60,7 @@ export default {
 
 <style scoped>
 .landing {
-  height: 820px;
+  height: 850px;
   border-bottom: 1px solid black;
 }
 
@@ -77,5 +78,6 @@ p {
 .landing-button svg {
   width: 30px;
   transform: rotate(90deg);
+  margin-left: 10px;
 }
 </style>
