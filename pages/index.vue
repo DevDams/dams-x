@@ -1,9 +1,6 @@
 <template>
   <div id="target">
     <div data-scroll-container>
-<<<<<<< HEAD
-      <div data-scroll-section class=".home container mx-auto h-screen w-screen">
-=======
       <div data-scroll-section class="relative landing mt-20 container mx-auto h-screen w-screen">
         <div class="landing-name mt-64">
           <h1 class="text-myblack uppercase font-bold">Adams <br> Aimé-Désiré</h1>
@@ -22,7 +19,6 @@
       </div>
       <div data-scroll-section class="home container mx-auto h-screen w-screen">
         <h1 class="text-myblack uppercase">Adams <br> Aimé-Désiré</h1>
->>>>>>> 1af91baecbf1194ae4837879b5b49860210418e7
       </div>
     </div>
   </div>

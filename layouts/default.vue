@@ -3,7 +3,7 @@
     <div class="bg-color">
       <Navbar class="navbar fixed top-0" />
       <Nuxt />
-      <ToggleButton class="absolute bottom-16 left-32" />
+      <ToggleButton class="absolute top-24 right-10 transform rotate-90" />
     </div>
   </div>
 </template>

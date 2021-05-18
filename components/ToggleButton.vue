@@ -21,8 +21,8 @@ export default {
 
 <style scoped>
 .switch {
-  width: 90px;
-  height: 55px;
+  width: 60px;
+  height: 35px;
 }
 
 .switch input {
@@ -40,7 +40,7 @@ export default {
   position: absolute;
   content: '';
   bottom: 14px;
-  top: 8px;
+  top: 6.5px;
   background-color: rgb(34, 34, 34);
   transition: .3s;
 }
@@ -51,7 +51,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  transform: translateX(37px);
+  transform: translateX(23px);
   background-color: white;
 }
 
