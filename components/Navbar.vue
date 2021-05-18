@@ -61,9 +61,12 @@ export default {
 button {
   outline: none;
 }
+
 .navbar {
   font-family: 'Lato', sans-serif;
+  z-index: 15;
 }
+
 @media (max-width: 768px) {
   .navbar-item {
     position: fixed;
