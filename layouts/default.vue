@@ -32,7 +32,7 @@ body {
 
 body.dark {
   background-color: #131313;
-  color: rgb(195, 195, 195);
+  color: #c3c3c3;
 }
 
 body.dark h1 {
@@ -43,8 +43,8 @@ body.dark .navbar {
   background-color: black;
 }
 
-body.dark svg {
-  background-color: white;
+body.dark svg g polygon {
+  fill: #c3c3c3 !important;
 }
 
 .noise-bg::before {

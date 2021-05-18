@@ -2,7 +2,9 @@
   <div class="navbar w-full h-20 bg-myblack">
     <div class="container mx-auto h-full text-white flex items-center justify-between">
       <div class="logo">
-        <h1 class="text-3xl uppercase">aimé.</h1>
+        <nuxt-link to="/">
+          <h1 class="text-3xl uppercase">aimé.</h1>
+        </nuxt-link>
       </div>
       <div class="navbar-item md:text-2xl lg:text-2xl xl:text-3xl uppercase" :class="{ 'active': isHide }">
         <nuxt-link to="/about" class="md:px-6 lg:px-6 xl:px-8">about</nuxt-link>

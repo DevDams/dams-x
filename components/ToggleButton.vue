@@ -11,9 +11,21 @@
 
 <script>
 export default {
+  mounted () {
+    if (localStorage.getItem('darkmode')) {
+      document.body.classList.toggle('dark')
+      document.querySelector('.check').checked = true
+    }
+  },
   methods: {
     dark () {
-      document.body.classList.toggle('dark')
+      if (localStorage.getItem('darkmode')) {
+        localStorage.removeItem('darkmode')
+        document.body.classList.toggle('dark')
+      } else {
+        localStorage.setItem('darkmode', 'enabled')
+        document.body.classList.toggle('dark')
+      }
     }
   }
 }
