@@ -18,6 +18,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src:'https://unpkg.com/@barba/core'
+      },
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js'
+      }
     ]
   },
 
