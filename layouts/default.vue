@@ -9,13 +9,7 @@
 </template>
 
 <script>
-export default {
-  mounted () {
-    window.onload = function () {
-      alert('bonjour')
-    }
-  }
-}
+export default {}
 </script>
 
 <style>
