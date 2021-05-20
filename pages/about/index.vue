@@ -12,7 +12,6 @@
 <script>
 import LocomotiveScroll from 'locomotive-scroll'
 export default {
-  trasition: 'page',
   mounted () {
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),

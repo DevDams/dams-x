@@ -1,14 +1,22 @@
 <template>
-  <div data-barba="wrapper">
-    <div class="noise-bg">
-      <div class="bg-color">
-        <Navbar class="navbar fixed top-0" />
-        <Nuxt />
-        <ToggleButton class="absolute top-24 right-10 transform rotate-90" />
-      </div>
+  <div class="noise-bg">
+    <div class="bg-color">
+      <Navbar class="navbar fixed top-0" />
+      <Nuxt />
+      <ToggleButton class="absolute top-24 right-10 transform rotate-90" />
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted () {
+    window.onload = function () {
+      alert('bonjour')
+    }
+  }
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
