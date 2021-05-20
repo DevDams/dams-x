@@ -11,8 +11,31 @@
           </p>
         </div>
         <div class="landing-button absolute mt-20 right-20">
-          <nuxt-link to="/work" class="text-3xl uppercase flex">
-            My work
+          <nuxt-link to="/about" class="text-3xl uppercase flex">
+            About me
+            <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 200.981 200.981"
+            style="enable-background:new 0 0 200.981 200.981;"
+            xml:space="preserve">
+              <g>
+                <g>
+                  <g>
+                    <polygon
+                    style="fill:#010002;"
+                    points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                    10.271,17.515 193.72,200.981 200.974,193.727"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </nuxt-link>
+          <nuxt-link to="/contact" class="text-3xl uppercase flex">
+            Contact me
             <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +60,9 @@
         </div>
       </div>
       <div data-scroll-section class="home container mx-auto h-screen w-screen">
-        <h1 class="text-myblack uppercase">Adams <br> Aimé-Désiré</h1>
+        <div class="home-project mt-32 w-3/4">
+          <h1 class="text-myblack text-6xl uppercase text-right">I love build or rebuild thing with code 🙃</h1>
+        </div>
       </div>
     </div>
   </div>
@@ -58,13 +83,20 @@ export default {
 </script>
 
 <style scoped>
+body.dark .landing {
+  border-bottom: 1px solid white;
+}
+
+h1 {
+  font-family: 'Krona One', sans-serif;
+}
+
 .landing {
   height: 850px;
   border-bottom: 1px solid black;
 }
 
-h1 {
-  font-family: 'Krona One', sans-serif;
+.landing-name h1 {
   font-size: 135px;
   line-height: 1.2em;
 }
