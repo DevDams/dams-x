@@ -139,7 +139,7 @@
       <!-- Contact section -->
       <div data-scroll-section class="home-contact relative container mx-auto sm:w-screen">
         <div class="home-contact-title mt-16 sm:mt-24 md:mt-32">
-          <h1 class="text-5xl sm:text-6xl uppercase font-bold lg:pl-10 xl:pl-20 tracking-tighter">let's get un touch</h1>
+          <h1 class="text-5xl sm:text-6xl uppercase font-bold lg:pl-10 xl:pl-20 tracking-tighter">let's get in touch</h1>
           <p class="uppercase pt-8 font-normal text-xl sm:font-light sm:text-xl sm:pt-8 md:text-3xl md:pt-16 lg:pl-10 lg:pt-24 xl:pl-20">
             You have a project ? <br> I will be happy to discuss it with you.
           </p>
@@ -380,12 +380,28 @@ p {
     font-size: 80px;
   }
 
+  .home {
+    height: 1300px;
+  }
+
   .home-contact {
-    height: 520px;
+    height: 540px;
   }
 
   .home-contact-button svg {
     width: 21px;
+  }
+}
+
+@media (max-width: 545px) {
+  .home {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 430px) {
+  .home {
+    height: 1120px;
   }
 }
 </style>
