@@ -97,12 +97,12 @@
               </svg>
             </div>
             <div class="project-image mt-4 sm:w-2/3 md:w-1/2">
-              <img class="md:pr-16" src="~/assets/images/mad_.png" alt="Mad agence website clone capture">
+              <img class="md:pr-16" src="~/assets/images/mad.png" alt="Mad agence website clone capture">
             </div>
           </div>
           <div class="area-2 mt-24 flex flex-col-reverse sm:flex-row">
             <div class="project-image mt-4 sm:w-2/3 md:w-1/2">
-              <img class="md:pl-16" src="~/assets/images/pinky_.png" alt="Pinky bloc note app capture">
+              <img class="md:pl-16" src="~/assets/images/pinky.png" alt="Pinky bloc note app capture">
             </div>
             <div class="project-title w-1/2 flex">
               <svg
