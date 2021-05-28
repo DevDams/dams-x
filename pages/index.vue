@@ -196,7 +196,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Adams Aimé-Désiré, front-end developer. Let\'s wrok together and build awsome stuff'
+          content: 'Adams Aimé-Désiré, front-end developer. Let\'s wrok together and build awesome stuff'
         }
       ]
     }
