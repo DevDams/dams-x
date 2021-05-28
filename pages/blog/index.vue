@@ -1,8 +1,10 @@
 <template>
   <div id="target">
     <div data-scroll-container>
-      <div class="container mx-auto h-screen flex items-center justify-center">
-        <p class="text-3xl">
+      <div class="container mx-auto h-screen flex flex-col items-center justify-center">
+        <img class="file-error" src="~/assets/icons/file-error.svg" alt="">
+        <img class="file-error-2 hidden" src="~/assets/icons/file-error-2.svg" alt="">
+        <p class="text-3xl mt-6">
           Blog posts will be available soon...
         </p>
       </div>
@@ -37,5 +39,15 @@ export default {
 </script>
 
 <style scoped>
+body.dark .file-error {
+  display: none;
+}
 
+body.dark .file-error-2 {
+  display: block;
+}
+
+img {
+  width: 70px;
+}
 </style>
