@@ -12,7 +12,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      title: 'Error - Page not found',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Oh you find a broken link... Sorry there is nothing to see here.'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -75,5 +88,17 @@ body.dark img.black {
 
 .error-content a:hover::after {
   transform: translate(-6px, -6px);
+}
+
+@media (max-width: 768px) {
+  .error-content img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 455px) {
+  .error-content p {
+    font-size: 24px;
+  }
 }
 </style>
