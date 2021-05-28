@@ -97,12 +97,12 @@
               </svg>
             </div>
             <div class="project-image mt-4 sm:w-2/3 md:w-1/2">
-              <img class="skew-img md:pr-16" src="~/assets/images/mad.png" alt="">
+              <img class="skew-img md:pr-16" src="~/assets/images/mad_.png" alt="">
             </div>
           </div>
           <div class="area-2 mt-24 flex flex-col-reverse sm:flex-row">
             <div class="project-image mt-4 sm:w-2/3 md:w-1/2">
-              <img class="skew-img-2 md:pl-16" src="~/assets/images/pinky.png" alt="">
+              <img class="skew-img-2 md:pl-16" src="~/assets/images/pinky_.png" alt="">
             </div>
             <div class="project-title w-1/2 flex">
               <svg
@@ -140,7 +140,7 @@
       <div data-scroll-section class="home-contact relative container mx-auto sm:w-screen">
         <div class="home-contact-title mt-16 sm:mt-24 md:mt-32">
           <h1 class="text-5xl sm:text-6xl uppercase font-bold lg:pl-10 xl:pl-20 tracking-tighter">let's get in touch</h1>
-          <p class="uppercase pt-8 font-normal text-xl sm:font-light sm:text-xl sm:pt-8 md:text-3xl md:pt-16 lg:pl-10 lg:pt-24 xl:pl-20">
+          <p class="pt-8 font-medium text-xl sm:font-medium sm:text-xl sm:pt-8 md:text-2xl md:pt-16 lg:pl-10 lg:pt-24 xl:pl-20">
             You have a project ? <br> I will be happy to discuss it with you.
           </p>
         </div>
@@ -285,7 +285,7 @@ p {
 }
 
 .home-contact {
-  height: 900px;
+  height: 950px;
 }
 
 .home-project-more a::after, .home-project-more a::before {
@@ -367,7 +367,7 @@ p {
 
 @media (max-width: 640px) {
   #target {
-    width: 95%;
+    width: 92%;
     margin: auto;
   }
 
@@ -382,6 +382,10 @@ p {
 
   .home {
     height: 1300px;
+  }
+
+  .home-project-more a {
+    padding: 20px 35px;
   }
 
   .home-contact {
@@ -402,6 +406,55 @@ p {
 @media (max-width: 430px) {
   .home {
     height: 1120px;
+  }
+
+  .landing-name h1 {
+    font-size: 60px;
+  }
+
+  .landing-button a {
+    font-size: 21px;
+  }
+
+  .landing-button svg {
+    width: 20px;
+  }
+
+  .home-contact-address p {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .home-contact-title h1 {
+    font-size: 35px;
+  }
+
+  .home-contact-button {
+    right: 10px;
+  }
+}
+
+@media (max-width: 413px) {
+  .home {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 350px) {
+  .home {
+    height: 1120px;
+  }
+}
+
+@media (max-width: 350px) {
+  .home-contact-title h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 324px) {
+  .home {
+    height: 1200px;
   }
 }
 </style>

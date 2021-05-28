@@ -3,7 +3,7 @@
     <div class="bg-color">
       <Navbar class="navbar fixed top-0" />
       <Nuxt />
-      <ToggleButton class="fixed top-24 right-10 transform rotate-90" />
+      <ToggleButton class="toggleBtn fixed top-24 right-10 transform rotate-90" />
     </div>
   </div>
 </template>
@@ -62,5 +62,11 @@ body.dark svg g polygon {
   z-index: 1000;
   pointer-events: none;
   background-image: url(./assets/bg-images/noise.gif);
+}
+
+@media (max-width: 768px) {
+  .toggleBtn {
+    right: 8px;
+  }
 }
 </style>

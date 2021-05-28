@@ -121,4 +121,10 @@ button {
     transform: translateX(100%);
   }
 }
+
+@media (max-width: 640px) {
+  .logo {
+    padding-left: 15px;
+  }
+}
 </style>
