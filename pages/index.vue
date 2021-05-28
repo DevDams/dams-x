@@ -1,16 +1,17 @@
 <template>
   <div id="target">
+    <!-- Home intro -->
     <div data-scroll-container>
       <div data-scroll-section class="relative landing mt-20 container mx-auto">
         <div class="landing-name mt-56">
-          <h1 class="text-myblack uppercase font-bold">Adams <br> Aimé-Désiré</h1>
+          <h1 class="text-myblack uppercase font-black">Adams <br class="banane"> Aimé-Désiré</h1>
         </div>
-        <div class="landing-para w-2/3 mt-10 ml-32">
-          <p class="text-4xl uppercase">
+        <div class="landing-para mt-10 sm:ml-6 md:ml-32 md:w-2/3">
+          <p class="lg:text-3xl xl:text-4xl uppercase">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat odio aliquid blanditiis. Ratione ipsa, doloremque veritatis quam veniam laboriosam accusamus molestias ut a, debitis earum voluptates non officiis recusandae doloribus.
           </p>
         </div>
-        <div class="landing-button absolute mt-20 right-20">
+        <div class="landing-button absolute mt-20 sm:right-0 md:right-20">
           <nuxt-link to="/about" class="text-3xl uppercase flex">
             About me
             <svg
@@ -59,21 +60,22 @@
           </nuxt-link>
         </div>
       </div>
-      <div data-scroll-section class="home relative container mx-auto w-screen">
-        <div class="home-project ml-80 mt-32 w-3/4">
-          <h1 class="text-myblack text-6xl uppercase text-right">I love build or rebuild thing with code</h1>
+      <!-- Home project section -->
+      <div data-scroll-section class="home relative container mx-auto sm:w-screen">
+        <div class="home-project mt-20 sm:mt-20 md:w-full md:mt-32 lg:ml-64 xl:ml-80 lg:w-3/4">
+          <h1 class="text-myblack text-4xl sm:text-5xl md:text-6xl font-black uppercase text-right">I love build or rebuild thing with code</h1>
         </div>
-        <div class="home-para text-right mr-16 mt-8">
+        <div class="home-para text-right xl:mr-16 mt-8">
           <p class="text-2xl font-medium">
             Take a look at some of the thing i've done with passion
           </p>
         </div>
         <div class="home-project-area mt-20">
-          <div class="area-1 flex">
-            <div class="project-title w-1/2 flex">
-              <h3 class="text-lg font-medium uppercase ml-32">MAD.AC agency website clone</h3>
+          <div class="area-1 flex flex-col sm:flex-row">
+            <div class="project-title md:w-1/2 flex">
+              <h3 class="text-2xl md:text-lg font-medium uppercase lg:ml-32">MAD.AC agency website clone</h3>
               <svg
-              class="ml-3 -mt-2"
+              class="hidden sm:hidden md:block md:ml-3 -mt-2"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -94,17 +96,17 @@
                 </g>
               </svg>
             </div>
-            <div class="project-image w-1/2">
-              <img class="pr-16" src="~/assets/images/mad_.png" alt="">
+            <div class="project-image mt-4 sm:w-2/3 md:w-1/2">
+              <img class="skew-img md:pr-16" src="~/assets/images/mad.png" alt="">
             </div>
           </div>
-          <div class="area-2 mt-24 flex">
-            <div class="project-image w-1/2">
-              <img class="pl-16" src="~/assets/images/pinky_.png" alt="">
+          <div class="area-2 mt-24 flex flex-col-reverse sm:flex-row">
+            <div class="project-image mt-4 sm:w-2/3 md:w-1/2">
+              <img class="skew-img-2 md:pl-16" src="~/assets/images/pinky.png" alt="">
             </div>
             <div class="project-title w-1/2 flex">
               <svg
-              class="ml-64 -mt-2"
+              class="hidden sm:hidden md:block md:ml-36 lg:ml-64 -mt-2"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -124,34 +126,60 @@
                   </g>
                 </g>
               </svg>
-              <h3 class="text-lg font-medium uppercase">Bloc note app</h3>
+              <h3 class="text-2xl md:text-lg font-medium uppercase sm:ml-28 md:ml-0">Bloc note app</h3>
             </div>
           </div>
-          <div class="home-project-more text-center mt-28">
-            <nuxt-link to="/work" class="relative px-16 py-6 text-black font-bold uppercase">
+          <div class="home-project-more relative text-center mt-28">
+            <nuxt-link to="/work" class="relative px-16 py-6 text-myblack font-semibold uppercase">
               See more
             </nuxt-link>
           </div>
         </div>
       </div>
       <!-- Contact section -->
-      <div data-scroll-section class="home relative container mx-auto w-screen">
-        <div class="home-contact-title mt-20">
-          <h1 class="text-6xl font-black uppercase pl-20">Let's get in touch</h1>
+      <div data-scroll-section class="home-contact relative container mx-auto sm:w-screen">
+        <div class="home-contact-title mt-16 sm:mt-24 md:mt-32">
+          <h1 class="text-5xl sm:text-6xl uppercase font-bold lg:pl-10 xl:pl-20 tracking-tighter">let's get in touch</h1>
+          <p class="uppercase pt-8 font-normal text-xl sm:font-light sm:text-xl sm:pt-8 md:text-3xl md:pt-16 lg:pl-10 lg:pt-24 xl:pl-20">
+            You have a project ? <br> I will be happy to discuss it with you.
+          </p>
         </div>
-        <div class="home-contact-eamil text-center mt-28">
-          <p class="text-2xl uppercase">Email :</p>
-          <p class="text-6xl font-semibold mt-6">
+        <div class="home-contact-address mt-16 sm:mt-16 md:mt-28 lg:mt-32 text-center">
+          <p class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mt-4">
             <a href="mailto:ad.aimedesire@gmail.com">
               ad.aimedesire@gmail.com
             </a>
           </p>
-        </div>
-        <div class="home-contact-eamil text-center mt-16">
-          <p class="text-2xl uppercase">Phone :</p>
-          <p class="text-6xl font-semibold mt-6">
-            <a href="tel:+2250778812111">+225 07 78 81 2111</a>
+          <p class="font-medium text-4xl mt-3 sm:text-4xl sm:mt-3 md:text-5xl md:mt-9 lg:text-6xl">
+            <a href="tel:+2250778812111">
+              +225 07 78 81 2111
+            </a>
           </p>
+        </div>
+        <div class="home-contact-button absolute bottom-14 right-10 sm:bottom-16 sm:right-10 md:bottom-16 md:right-8 lg:right-10 lg:bottom-20 xl:right-10 xl:bottom-72">
+          <nuxt-link to="/contact" class="text-2xl sm:text-3xl flex">
+            Just say hello
+            <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 200.981 200.981"
+            style="enable-background:new 0 0 200.981 200.981;"
+            xml:space="preserve">
+              <g>
+                <g>
+                  <g>
+                    <polygon
+                    style="fill:#010002;"
+                    points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                    10.271,17.515 193.72,200.981 200.974,193.727"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -161,6 +189,15 @@
 <script>
 import LocomotiveScroll from 'locomotive-scroll'
 export default {
+  head () {
+    return {
+      script: [
+        {
+          src: 'js/skew.js'
+        }
+      ]
+    }
+  },
   mounted () {
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
@@ -188,7 +225,7 @@ body.dark .home-project-more a {
 body.dark .home-project-more a::after, body.dark .home-project-more a::before {
   content: '';
   position: absolute;
-  border: 2px solid #e0e0e0;
+  border: 2px solid white;
   width: calc(100% - 4px);
   height: calc(100% - 4px);
   left: 0;
@@ -198,11 +235,7 @@ body.dark .home-project-more a::after, body.dark .home-project-more a::before {
 }
 
 body.dark .home-project-more a:hover::after {
-  transform: translate(-4px, -4px);
-}
-
-body.dark .home-project-more a:hover::before {
-  transform: translate(4px, 4px);
+  transform: translate(-6px, -6px);
 }
 
 h1 {
@@ -230,7 +263,7 @@ p {
 }
 
 .home {
-  height: 1300px;
+  height: 1330px;
   border-bottom: 1px solid black;
 }
 
@@ -246,6 +279,15 @@ p {
   transform: rotate(-90deg);
 }
 
+.home-project-area img {
+  transition: transform .25s;
+  will-change: transform;
+}
+
+.home-contact {
+  height: 900px;
+}
+
 .home-project-more a::after, .home-project-more a::before {
   content: '';
   position: absolute;
@@ -259,14 +301,107 @@ p {
 }
 
 .home-project-more a:hover::after {
-  transform: translate(-4px, -4px);
+  transform: translate(-6px, -6px);
 }
 
-.home-project-more a:hover::before {
-  transform: translate(4px, 4px);
+.home-contact-button svg {
+  width: 30px;
+  transform: rotate(90deg);
+  margin-left: 10px;
 }
 
-.home-contact-title a {
-  font-family: 'Krona One', sans-serif;
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .landing {
+    height: 770px;
+  }
+
+  .landing-name h1 {
+    font-size: 110px;
+  }
+
+  .home {
+    height: 1100px;
+  }
+
+  .home-contact {
+    height: 800px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .landing {
+    height: 690px;
+  }
+
+  .landing-name h1 {
+    font-size: 90px;
+  }
+
+  .home {
+    height: 1020px;
+  }
+
+  .home-contact {
+    height: 750px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .landing {
+    height: 720px;
+  }
+
+  .landing-name h1 {
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .home {
+    height: 1000px;
+  }
+
+  .home-contact {
+    height: 620px;
+  }
+}
+
+@media (max-width: 640px) {
+  #target {
+    width: 95%;
+    margin: auto;
+  }
+
+  .landing {
+    height: 650px;
+  }
+
+  .landing-name h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .home {
+    height: 1300px;
+  }
+
+  .home-contact {
+    height: 540px;
+  }
+
+  .home-contact-button svg {
+    width: 21px;
+  }
+}
+
+@media (max-width: 545px) {
+  .home {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 430px) {
+  .home {
+    height: 1120px;
+  }
 }
 </style>
