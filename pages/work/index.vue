@@ -1,6 +1,199 @@
 <template>
   <div id="target">
-    <div data-scroll-container></div>
+    <div data-scroll-container>
+      <div data-scroll-section>
+        <div class="relative container mx-auto mt-20">
+          <div class="intro_title mt-48">
+            <h1 class="text-6xl font-bold uppercase">Select Work</h1>
+            <p class="mt-4 pl-12">
+              These are some of my recent personal project. <br>
+              always subject to change.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="prject_row">
+        <!-- row 1 -->
+        <div class="row_1 container mx-auto flex w-screen">
+          <!-- Project 1 -->
+          <div data-scroll-section class="project_1 relative mt-28 pr-8">
+            <div class="project_1_title">
+              <h1 class="text-3xl uppercase pb-4">MAD agence website clone</h1>
+            </div>
+            <div class="project_1_desc relative mt-4">
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in et nulla consectetur cum doloremque vitae aliquam, expedita numquam alias deserunt ad porro sunt perspiciatis sint, omnis nam praesentium vero!
+              </p>
+              <a href="" class="absolute flex text-xl font-bold left-0 top-20">
+                <span class="pr-3">See It</span>
+                <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200.981 200.981"
+                style="enable-background:new 0 0 200.981 200.981;"
+                xml:space="preserve">
+                  <g>
+                    <g>
+                      <g>
+                        <polygon
+                        style="fill:#010002;"
+                        points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                        10.271,17.515 193.72,200.981 200.974,193.727"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div data-scroll-section class="project_2 relative mt-72 pl-8">
+            <div class="project_2_title">
+              <h1 class="text-3xl uppercase pb-4">Spotify web player clone</h1>
+            </div>
+            <div class="project_2_desc relative mt-4">
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in et nulla consectetur cum doloremque vitae aliquam, expedita numquam alias deserunt ad porro sunt perspiciatis sint, omnis nam praesentium vero!
+              </p>
+              <a href="" class="absolute flex text-xl font-bold right-0 top-20">
+                <span class="pr-3">See It</span>
+                <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200.981 200.981"
+                style="enable-background:new 0 0 200.981 200.981;"
+                xml:space="preserve">
+                  <g>
+                    <g>
+                      <g>
+                        <polygon
+                        style="fill:#010002;"
+                        points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                        10.271,17.515 193.72,200.981 200.974,193.727"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row_2 container mx-auto flex w-screen">
+          <!-- Project 3 -->
+          <div data-scroll-section class="project_3 relative mt-28 pr-8">
+            <div class="project_3_title">
+              <h1 class="text-3xl uppercase pb-4">Quizz App</h1>
+            </div>
+            <div class="project_3_desc relative mt-4">
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in et nulla consectetur cum doloremque vitae aliquam, expedita numquam alias deserunt ad porro sunt perspiciatis sint, omnis nam praesentium vero!
+              </p>
+              <a href="" class="absolute flex text-xl font-bold left-0 top-20">
+                <span class="pr-3">See It</span>
+                <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200.981 200.981"
+                style="enable-background:new 0 0 200.981 200.981;"
+                xml:space="preserve">
+                  <g>
+                    <g>
+                      <g>
+                        <polygon
+                        style="fill:#010002;"
+                        points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                        10.271,17.515 193.72,200.981 200.974,193.727"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div data-scroll-section class="project_4 relative mt-72 pl-8">
+            <div class="project_4_title">
+              <h1 class="text-3xl uppercase pb-4">Weather App</h1>
+            </div>
+            <div class="project_4_desc relative mt-4">
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in et nulla consectetur cum doloremque vitae aliquam, expedita numquam alias deserunt ad porro sunt perspiciatis sint, omnis nam praesentium vero!
+              </p>
+              <a href="" class="absolute flex text-xl font-bold right-0 top-20">
+                <span class="pr-3">See It</span>
+                <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200.981 200.981"
+                style="enable-background:new 0 0 200.981 200.981;"
+                xml:space="preserve">
+                  <g>
+                    <g>
+                      <g>
+                        <polygon
+                        style="fill:#010002;"
+                        points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                        10.271,17.515 193.72,200.981 200.974,193.727"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row_3 container mx-auto flex w-screen">
+          <!-- Project 5 -->
+          <div data-scroll-section class="project_5 relative w-1/2 mt-28 pr-8">
+            <div class="project_5_title">
+              <h1 class="text-3xl uppercase pb-4">MAD agence website clone</h1>
+            </div>
+            <div class="project_5_desc relative mt-4">
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in et nulla consectetur cum doloremque vitae aliquam, expedita numquam alias deserunt ad porro sunt perspiciatis sint, omnis nam praesentium vero!
+              </p>
+              <a href="" class="absolute flex text-xl font-bold left-0 top-20">
+                <span class="pr-3">See It</span>
+                <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 200.981 200.981"
+                style="enable-background:new 0 0 200.981 200.981;"
+                xml:space="preserve">
+                  <g>
+                    <g>
+                      <g>
+                        <polygon
+                        style="fill:#010002;"
+                        points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                        10.271,17.515 193.72,200.981 200.974,193.727"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,5 +224,68 @@ export default {
 </script>
 
 <style scoped>
+body.dark .project_1 h1 {
+  border-bottom: 1px solid #e0e0e0;
+}
 
+body.dark .project_2 h1 {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body.dark .project_3 h1 {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body.dark .project_4 h1 {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body.dark .project_5 h1 {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.prject_row {
+  height: 1500px;
+}
+
+.intro_title h1 {
+  font-family: 'Krona One', sans-serif;
+}
+
+.project_1 h1 {
+  border-bottom: 1px solid black;
+  font-family: 'Krona One', sans-serif;
+}
+
+.project_2 h1 {
+  border-bottom: 1px solid black;
+  font-family: 'Krona One', sans-serif;
+}
+
+.project_3 h1 {
+  border-bottom: 1px solid black;
+  font-family: 'Krona One', sans-serif;
+}
+
+.project_4 h1 {
+  border-bottom: 1px solid black;
+  font-family: 'Krona One', sans-serif;
+}
+
+.project_5 h1 {
+  border-bottom: 1px solid black;
+  font-family: 'Krona One', sans-serif;
+}
+
+a svg {
+  width: 20px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 640px) {
+  #target {
+    width: 92%;
+    margin: auto;
+  }
+}
 </style>
