@@ -36,7 +36,7 @@ export default {
   // Error 404 page
   generate: {
     fallback: true
-  },
+  }, 
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

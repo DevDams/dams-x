@@ -1,6 +1,18 @@
 <template>
   <div id="target">
-    <div data-scroll-container></div>
+    <div data-scroll-container>
+      <div data-scroll-section>
+        <div class="relative container mx-auto mt-20">
+          <div class="intro_title mt-48">
+            <h1 class="text-6xl font-bold uppercase">Select Work</h1>
+            <p class="mt-4 pl-12">
+              These are some of my recent personal project. <br>
+              always subject to change.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
