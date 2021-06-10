@@ -10,7 +10,7 @@
       </div>
       <!-- Left box -->
       <div data-scroll-section>
-        <div class="contact-content relative container mx-auto flex flex-col sm:flex-col md:flex-row mt-20">
+        <div class="contact-content relative container mx-auto flex flex-col sm:flex-col md:flex-row mt-28">
           <div class="w-full md:w-1/2 left-box sm:w-full md:mr-4">
             <p class="font-normal text-lg">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit officiis dolorum debitis totam! Pariatur voluptate maxime distinctio dignissimos deserunt quisquam magnam quas voluptatibus cumque, quos tempora modi, rem, veritatis voluptas.
@@ -118,6 +118,10 @@ export default {
 #target {
   width: 92%;
   margin: auto;
+}
+
+h1 {
+  font-family: 'Krona One', sans-serif;
 }
 
 body.dark .social-network {

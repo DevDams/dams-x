@@ -39,7 +39,11 @@ body.dark {
   color: #c3c3c3;
 }
 
-body.dark h1 {
+body.dark h1, h2 {
+  color: white;
+}
+
+body.dark h2 {
   color: white;
 }
 

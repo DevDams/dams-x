@@ -22,14 +22,14 @@
           </span>
         </div>
         <div class="social-network hidden md:hidden lg:block lg:flex">
-          <a href="https://www.linkedin.com/in/adamsaimedesireofficial/" class="lg:px-2 xl:px-4">
+          <a href="https://www.linkedin.com/in/adamsaimedesireofficial/" target="_blank" class="lg:px-2 xl:px-4">
             <img src="~/assets/icons/linkedin.svg" alt="">
           </a>
-          <a href="https://twitter.com/dams9ix" class="lg:px-2 xl:px-4">
-            <img src="~/assets/icons/twitter.svg" alt="">
+          <a href="https://github.com/DevDams" target="_blank" class="lg:px-2 xl:px-4">
+            <img src="~/assets/icons/github.svg" alt="">
           </a>
-          <a href="https://www.instagram.com/dams9ix/" class="lg:px-2 xl:px-4">
-            <img src="~/assets/icons/instagram.svg" alt="">
+          <a href="https://twitter.com/dams9ix" target="_blank" class="lg:px-2 xl:px-4">
+            <img src="~/assets/icons/twitter.svg" alt="">
           </a>
         </div>
         <div class="burger block z-10 md:hidden">
