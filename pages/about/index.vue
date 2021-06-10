@@ -9,6 +9,7 @@
           </p>
         </div>
       </div>
+      <!-- xhat's my background -->
       <div data-scroll-section class="relative about-background">
         <div class="background-info container mx-auto mt-16 flex flex-col md:flex-row">
           <div class="left-box w-10/12 md:w-3/5">
@@ -23,6 +24,22 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et labore omnis quos natus mollitia quidem, saepe est nisi ex iure animi sunt ad sapiente quas. Nulla dolore maiores nesciunt? <br><br>
               In tempore ea quos quis optio accusantium? Repudiandae eaque totam repellat quae nobis unde? Repudiandae voluptatum dolores beatae, esse debitis ullam magnam laborum eaque veniam accusamus totam quam veritatis assumenda?
             </p>
+          </div>
+        </div>
+      </div>
+      <!-- Competencies -->
+      <div data-scroll-section class="relative about-skills">
+        <div class="skills-info">
+          <div class="skills-title container mx-auto">
+            <div class="left-box w-10/12 md:w-3/5">
+              <h2 class="text-6xl xl:text-8xl font-bold text-myblack">
+                Core <br> competencies
+              </h2>
+            </div>
+          </div>
+          <div class="w-full marquee bg-myblack flex items-center absolute mt-16">
+            <div class="text uppercase text-white text-7xl">Front-end development javascript html css integretion</div>
+            <div class="text uppercase text-white text-7xl">nuxtjs vuejs wordpress UI</div>
           </div>
         </div>
       </div>
@@ -61,6 +78,10 @@ export default {
   width: 92%;
   margin: auto;
 }
+
+h2, p {
+  font-family: 'Lato', sans-serif;
+}
 /* font-family: 'Krona One', sans-serif;
   font-family: 'Lato', sans-serif; */
 .about-home {
@@ -69,11 +90,31 @@ export default {
 }
 
 .about-background {
-  height: 720px;
+  height: 650px;
 }
 
-.about-background h2, p {
-  font-family: 'Lato', sans-serif;
+.about-skills {
+  height: 600px;
+}
+
+.marquee {
+  height: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee .text {
+  font-family: 'Krona One', sans-serif;
+  font-size: 100px;
+  padding-left: 100%;
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  100%{
+    transform: translate(-100%, 0);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -84,13 +125,25 @@ export default {
 
 @media (max-width: 768px) {
   .about-home {
-    height: 650px;
+    height: 620px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-background {
+    height: 780px;
   }
 }
 
 @media (max-width: 535px) {
   .about-home {
     height: 750px;
+  }
+}
+
+@media (max-width: 465px) {
+  .about-background {
+    height: 950px;
   }
 }
 
