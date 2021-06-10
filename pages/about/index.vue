@@ -2,7 +2,7 @@
   <div id="target">
     <div data-scroll-container>
       <div data-scroll-section class=".home container mx-auto h-screen w-screen">
-        <h1 class="text-6xl text-green-600 mt-64">Hello</h1>
+        <h1 class="text-6xl text-green-600 pt-64">Hello</h1>
         <h1>Bonjour about</h1>
       </div>
     </div>
