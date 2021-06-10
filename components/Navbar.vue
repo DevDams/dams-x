@@ -124,7 +124,7 @@ button {
     left: 0;
     width: 100vh;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.150);
+    background: rgba(0, 0, 0, 0.2);
     z-index: 3;
   }
   .visible {
