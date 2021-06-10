@@ -4,7 +4,7 @@
       <div data-scroll-section>
         <div class="relative container mx-auto mt-20">
           <div class="intro_title mt-48">
-            <h1 class="text-6xl font-bold uppercase">Select Work</h1>
+            <h1 class="text-6xl font-bold uppercase">Go</h1>
             <p class="mt-4 pl-12">
               These are some of my recent personal project. <br>
               always subject to change.

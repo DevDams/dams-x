@@ -7,7 +7,7 @@
             <h1 class="text-3xl uppercase">aimé.</h1>
           </nuxt-link>
         </div>
-        <div class="navbar-item md:text-2xl lg:text-2xl xl:text-3xl uppercase" :class="{ 'active': isHide }">
+        <div class="navbar-item md:text-2xl lg:text-2xl xl:text-3xl uppercase" :class="{ 'active': isHide }" >
           <span  class="py-4 md:px-6 lg:px-6 xl:px-8" @click="closeNav">
             <nuxt-link to="/about">about</nuxt-link>
           </span>

@@ -50,4 +50,15 @@ body.dark .file-error-2 {
 img {
   width: 70px;
 }
+
+@media (max-width: 640px) {
+  p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  img {
+    width: 55px;
+  }
+}
 </style>
