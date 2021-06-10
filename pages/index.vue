@@ -2,62 +2,64 @@
   <div id="target">
     <!-- Home intro -->
     <div data-scroll-container>
-      <div data-scroll-section class="relative landing mt-20 container mx-auto">
-        <div class="landing-name mt-56">
-          <h1 class="text-myblack uppercase font-black">Adams <br class="banane"> Aimé-Désiré</h1>
-        </div>
-        <div class="landing-para mt-10 sm:ml-6 md:ml-32 md:w-2/3">
-          <p class="lg:text-3xl xl:text-4xl uppercase">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat odio aliquid blanditiis. Ratione ipsa, doloremque veritatis quam veniam laboriosam accusamus molestias ut a, debitis earum voluptates non officiis recusandae doloribus.
-          </p>
-        </div>
-        <div class="landing-button absolute mt-20 sm:right-0 md:right-20">
-          <nuxt-link to="/about" class="text-3xl uppercase flex">
-            About me
-            <svg
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 200.981 200.981"
-            style="enable-background:new 0 0 200.981 200.981;"
-            xml:space="preserve">
-              <g>
+      <div data-scroll-section>
+        <div class="relative landing mt-20 container mx-auto">
+          <div class="landing-name mt-56">
+            <h1 class="text-myblack uppercase font-black">Adams <br class="banane"> Aimé-Désiré</h1>
+          </div>
+          <div class="landing-para mt-10 sm:ml-6 md:ml-32 md:w-2/3">
+            <p class="lg:text-3xl xl:text-4xl uppercase">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat odio aliquid blanditiis. Ratione ipsa, doloremque veritatis quam veniam laboriosam accusamus molestias ut a, debitis earum voluptates non officiis recusandae doloribus.
+            </p>
+          </div>
+          <div class="landing-button absolute mt-20 sm:right-0 md:right-20">
+            <nuxt-link to="/about" class="text-3xl uppercase flex">
+              About me
+              <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 200.981 200.981"
+              style="enable-background:new 0 0 200.981 200.981;"
+              xml:space="preserve">
                 <g>
                   <g>
-                    <polygon
-                    style="fill:#010002;"
-                    points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
-                    10.271,17.515 193.72,200.981 200.974,193.727"/>
+                    <g>
+                      <polygon
+                      style="fill:#010002;"
+                      points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                      10.271,17.515 193.72,200.981 200.974,193.727"/>
+                    </g>
                   </g>
                 </g>
-              </g>
-            </svg>
-          </nuxt-link>
-          <nuxt-link to="/contact" class="text-3xl uppercase flex">
-            Contact me
-            <svg
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 200.981 200.981"
-            style="enable-background:new 0 0 200.981 200.981;"
-            xml:space="preserve">
-              <g>
+              </svg>
+            </nuxt-link>
+            <nuxt-link to="/contact" class="text-3xl uppercase flex">
+              Contact me
+              <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 200.981 200.981"
+              style="enable-background:new 0 0 200.981 200.981;"
+              xml:space="preserve">
                 <g>
                   <g>
-                    <polygon
-                    style="fill:#010002;"
-                    points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
-                    10.271,17.515 193.72,200.981 200.974,193.727"/>
+                    <g>
+                      <polygon
+                      style="fill:#010002;"
+                      points="17.511,10.264 129.068,10.264 129.068,0 0.007,0 0.007,129.068 10.257,129.068
+                      10.271,17.515 193.72,200.981 200.974,193.727"/>
+                    </g>
                   </g>
                 </g>
-              </g>
-            </svg>
-          </nuxt-link>
+              </svg>
+            </nuxt-link>
+          </div>
         </div>
       </div>
       <!-- Home project section -->
