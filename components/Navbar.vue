@@ -43,7 +43,7 @@
       <div class="overlay" :class="{ 'visible' : visible}" @click="maskMenu"></div>
     </div>
     <div v-if="load" class="loader w-screen h-screen bg-black flex items-center justify-center">
-      <img class="w-16" src="~/assets/icons/oval.svg" alt="spinner">
+      <img class="w-10" src="~/assets/icons/oval.svg" alt="spinner">
     </div>
   </div>
 </template>
