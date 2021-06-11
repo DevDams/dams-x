@@ -96,6 +96,10 @@ button {
   z-index: 15;
 }
 
+.logo h1 {
+  font-family: 'Krona One', sans-serif;
+}
+
 @media (max-width: 768px) {
   .navbar-item {
     position: fixed;

@@ -52,16 +52,11 @@
             <p class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi atque dignissimos odio quae itaque provident adipisci ratione porro. Doloribus alias eius sequi nihil dolores quaerat ullam, itaque nostrum perspiciatis dolorum.
             </p>
-          </div>
-        </div>
-      </div>
-      <!-- Contact button -->
-      <div class="relative contact-button">
-        <div class="contact-content container mx-auto text-right">
-          <div class="button">
-            <nuxt-link to="/contact" class="text-myblack text-4xl uppercase font-semibold">
-              Contact
-            </nuxt-link>
+            <div class="button text-right mt-36 h-24">
+              <nuxt-link to="/contact" class="text-myblack text-4xl uppercase font-semibold">
+                Contact
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -108,8 +103,7 @@ body.dark .marquee, body.dark .marquee-2, body.dark .button a {
 h2, p {
   font-family: 'Lato', sans-serif;
 }
-/* font-family: 'Krona One', sans-serif;
-  font-family: 'Lato', sans-serif; */
+
 .about-home {
   height: 680px;
   font-family: 'Lato', sans-serif;
@@ -126,10 +120,6 @@ h2, p {
 .project-demande {
   height: 600px;
   font-family: 'Lato', sans-serif;
-}
-
-.contact-button {
-  height: 150px;
 }
 
 /* Marquee text animation */
@@ -261,10 +251,6 @@ h2, p {
 
   .skills-title h2 {
     font-size: 3rem;
-  }
-
-  .contact-button {
-    height: 110px;
   }
 }
 
