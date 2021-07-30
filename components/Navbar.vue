@@ -15,9 +15,6 @@
             <nuxt-link to="/work">work</nuxt-link>
           </span>
           <span class="py-4 md:px-6 lg:px-6 xl:px-8" @click="closeNav">
-            <nuxt-link to="/blog">blog</nuxt-link>
-          </span>
-          <span class="py-4 md:px-6 lg:px-6 xl:px-8" @click="closeNav">
             <nuxt-link to="/contact">contact</nuxt-link>
           </span>
         </div>
