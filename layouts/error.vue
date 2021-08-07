@@ -57,19 +57,6 @@ body.dark img.black {
   display: block;
 }
 
-.noise-bg::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  opacity: .04;
-  z-index: 1000;
-  pointer-events: none;
-  background-image: url(./assets/bg-images/noise.gif);
-}
-
 .error-content img {
   width: 200px;
 }

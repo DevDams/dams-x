@@ -23,6 +23,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "~assets/fonts/style.css",
+    // Global css
+    "~assets/css/global.css",
     // Burger button
     '@/assets/css/hamburgers.css',
     // Locomotive scroll

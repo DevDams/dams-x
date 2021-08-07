@@ -3,7 +3,7 @@
     <div class="container">
       <label class="switch relative block">
         <input type="checkbox" class="check" @change="dark">
-        <span class="slider round absolute top-0 left-0 right-0 bottom-0 bg-white border-2 border-myblack"></span>
+        <span class="slider round absolute top-0 left-0 right-0 bottom-0 bg-white border-myblack"></span>
       </label>
     </div>
   </div>
@@ -45,6 +45,7 @@ export default {
   position: absolute;
   cursor: pointer;
   transition: .3s all ease-in-out;
+  border: 3px solid black;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,13 +54,13 @@ export default {
   content: '';
   bottom: 14px;
   top: 6.5px;
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(0, 0, 0);
   transition: .3s;
 }
 
 input:checked + .slider {
   background-color: black;
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
 input:checked + .slider::before {
@@ -75,7 +76,7 @@ input:checked + .slider::before {
   width: 50%;
   height: 90%;
   border-radius: 50%;
-  margin-top: -5px;
+  margin-top: -4.8px;
   margin-left: 3px;
 }
 </style>
