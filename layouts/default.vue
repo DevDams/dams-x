@@ -1,7 +1,7 @@
 <template>
   <div class="noise-bg">
     <div class="bg-color">
-      <Navbar class="navbar fixed top-0" />
+      <Navbar class="navbar fixed top-0 z-20" />
       <Nuxt />
       <ToggleButton class="toggleBtn fixed bottom-10 left-24 transform" />
     </div>
