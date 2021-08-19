@@ -3,7 +3,7 @@
     <div class="bg-color">
       <Navbar class="navbar fixed top-0" />
       <Nuxt />
-      <ToggleButton class="toggleBtn fixed top-24 right-10 transform rotate-90" />
+      <ToggleButton class="toggleBtn fixed bottom-10 left-24 transform" />
     </div>
   </div>
 </template>
@@ -33,7 +33,11 @@ body {
 
 body.dark {
   background-color: #131313;
-  color: #c3c3c3;
+  color: #fff;
+}
+
+body.dark .navbar {
+  background-color: #131313;
 }
 
 @media (max-width: 768px) {
