@@ -1,10 +1,10 @@
 <template>
-  <div class="noise-bg">
+  <div>
     <div class="error-content w-screen h-screen flex flex-col items-center justify-center">
-      <img class="white" src="~/assets/icons/404-error.svg" alt="error svg">
-      <img class="black hidden" src="~/assets/icons/404-error-2.svg" alt="error svg">
-      <p class="text-4xl mt-16 mb-10">Oupsss... page not found</p>
-      <nuxt-link to="/" class="relative text-lg uppercase px-10 py-3">
+      <img class="white" src="~/assets/icons/404.svg" alt="error svg">
+      <img class="black hidden" src="~/assets/icons/404-white.svg" alt="error svg">
+      <p class="text-4xl mt-16 mb-10">Oupsss... sorry page not found</p>
+      <nuxt-link to="/" class="relative text-lg font-semibold uppercase px-10 py-3">
         Go home
       </nuxt-link>
     </div>
@@ -59,6 +59,7 @@ body.dark img.black {
 
 .error-content img {
   width: 200px;
+  margin-left: -10px;
 }
 
 .error-content a::after, .error-content a::before {
