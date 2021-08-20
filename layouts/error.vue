@@ -3,9 +3,11 @@
     <div class="error-content w-screen h-screen flex flex-col items-center justify-center">
       <img class="white" src="~/assets/icons/404.svg" alt="error svg">
       <img class="black hidden" src="~/assets/icons/404-white.svg" alt="error svg">
-      <p class="text-4xl font-semibold mt-6 sm:mt-14 mb-10">Oupsss... sorry page not found</p>
-      <nuxt-link to="/" class="relative text-lg font-bold uppercase px-10 py-3">
-        Go home
+      <p class="text-4xl font-semibold mt-6 sm:mt-14 mb-6">Oupsss... sorry page not found</p>
+      <nuxt-link to="/">
+        <button class="relative text-lg font-bold px-10 py-2 bg-black text-white rounded-lg shadow-lg">
+          Go home
+        </button>
       </nuxt-link>
     </div>
   </div>
@@ -37,18 +39,6 @@ export default {
   padding: 0;
 }
 
-body.dark .error-content a::after, body.dark .error-content a::before {
-  content: '';
-  position: absolute;
-  border: 2px solid white;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: transform .3s ease;
-}
-
 body.dark img.white {
   display: none;
 }
@@ -57,31 +47,14 @@ body.dark img.black {
   display: block;
 }
 
+body.dark a button {
+  background: rgb(245, 245, 245);
+  color: black;
+}
+
 .error-content img {
   width: 200px;
   margin-left: -10px;
-}
-
-.error-content a::after, .error-content a::before {
-  content: '';
-  position: absolute;
-  border: 2px solid black;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: transform .3s ease;
-}
-
-.error-content a:hover::after {
-  transform: translate(-6px, -6px);
-}
-
-@media (max-width: 768px) {
-  .error-content img {
-    width: 120px;
-  }
 }
 
 @media (max-width: 455px) {
