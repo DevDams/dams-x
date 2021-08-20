@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-screen mynavbar bg-white">
+  <div class="w-full mynavbar bg-white">
     <div class="bar w-full h-20 shadow-sm z-30">
       <div class="container h-full bg-white mx-auto flex items-center justify-between px-6">
         <div class="logo text-4xl font-extrabold">
@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="menu_items absolute w-full h-full top-0 left-0 bg-white flex items-center justify-center text-center" :class="open ? 'block' : 'hidden'">
+    <div class="menu_items absolute w-full h-screen top-0 left-0 bg-white flex items-center justify-center text-center" :class="open ? 'block' : 'hidden'">
         <div class="items mt-6">
           <ul>
             <li>
@@ -28,12 +28,12 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/projects">
+              <nuxt-link to="/work">
                 <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10">Projects</button>
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/projects">
+              <nuxt-link to="/contact">
                 <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10">Contacts</button>
               </nuxt-link>
             </li>

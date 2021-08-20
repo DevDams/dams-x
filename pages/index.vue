@@ -1,6 +1,6 @@
 <template>
-  <div class="target container mx-auto">
-    <h1 class="text-7xl font-semibold">Hello world</h1>
+  <div class="target container mx-auto px-6">
+    <h1 class="text-7xl font-semibold pt-20">Hello world</h1>
   </div>
 </template>
 

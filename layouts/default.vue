@@ -3,7 +3,7 @@
     <div class="bg-color">
       <Navbar class="navbar fixed top-0 z-40" />
       <Nuxt />
-      <ToggleButton class="toggleBtn sticky transform z-40" />
+      <ToggleButton class="toggleBtn sticky bottom-6 transform z-40" />
     </div>
   </div>
 </template>

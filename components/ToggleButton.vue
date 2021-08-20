@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .toogle {
-  height: calc(100vh - 95px);
+  height: 0;
 }
 
 .switch {
