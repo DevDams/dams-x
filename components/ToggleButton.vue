@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="toogle container mx-auto flex items-end">
       <label class="switch relative block">
         <input type="checkbox" class="check" @change="dark">
         <span class="slider round absolute top-0 left-0 right-0 bottom-0 bg-white border-myblack"></span>
@@ -32,6 +32,9 @@ export default {
 </script>
 
 <style scoped>
+.toogle {
+  height: calc(100vh - 75px);
+}
 .switch {
   width: 60px;
   height: 35px;
@@ -78,5 +81,11 @@ input:checked + .slider::before {
   border-radius: 50%;
   margin-top: -4.8px;
   margin-left: 3px;
+}
+
+@media (max-width: 776px) {
+  .switch {
+    transform: scale(.9);
+  }
 }
 </style>

@@ -1,16 +1,10 @@
 <template>
-<<<<<<< HEAD
-  <div class="">
-    <Nuxt />
-    <ToggleButton class="toggleBtn fixed bottom-16 left-16 transform" />
-=======
   <div class="noise-bg">
     <div class="bg-color">
-      <Navbar class="navbar fixed top-0 z-20" />
+      <Navbar class="navbar fixed top-0 z-40" />
       <Nuxt />
-      <ToggleButton class="toggleBtn fixed bottom-10 left-24 transform" />
+      <ToggleButton class="toggleBtn sticky transform z-40" />
     </div>
->>>>>>> b38428cadb1dd8a0d68b8a6afc12173b296caccf
   </div>
 </template>
 
@@ -39,20 +33,14 @@ body {
 
 body.dark {
   background-color: #131313;
-<<<<<<< HEAD
-  color: #efefef;
-=======
   color: #fff;
 }
 
 body.dark .navbar {
   background-color: #131313;
->>>>>>> b38428cadb1dd8a0d68b8a6afc12173b296caccf
 }
 
-@media (max-width: 768px) {
-  .toggleBtn {
-    right: 8px;
-  }
+.toggleBtn {
+  margin-left: 30px;
 }
 </style>
