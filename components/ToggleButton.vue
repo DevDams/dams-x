@@ -89,10 +89,4 @@ input:checked + .slider::before {
     transform: scale(.9);
   }
 }
-
-@media (max-width: 365px) {
-  .toogle {
-    height: calc(100vh - 165px);
-  }
-}
 </style>

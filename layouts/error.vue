@@ -3,8 +3,8 @@
     <div class="error-content w-screen h-screen flex flex-col items-center justify-center">
       <img class="white" src="~/assets/icons/404.svg" alt="error svg">
       <img class="black hidden" src="~/assets/icons/404-white.svg" alt="error svg">
-      <p class="text-4xl mt-16 mb-10">Oupsss... sorry page not found</p>
-      <nuxt-link to="/" class="relative text-lg font-semibold uppercase px-10 py-3">
+      <p class="text-4xl font-semibold mt-6 sm:mt-14 mb-10">Oupsss... sorry page not found</p>
+      <nuxt-link to="/" class="relative text-lg font-bold uppercase px-10 py-3">
         Go home
       </nuxt-link>
     </div>
