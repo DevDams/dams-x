@@ -33,8 +33,9 @@ export default {
 
 <style scoped>
 .toogle {
-  height: calc(100vh - 75px);
+  height: calc(100vh - 95px);
 }
+
 .switch {
   width: 60px;
   height: 35px;
@@ -86,6 +87,12 @@ input:checked + .slider::before {
 @media (max-width: 776px) {
   .switch {
     transform: scale(.9);
+  }
+}
+
+@media (max-width: 365px) {
+  .toogle {
+    height: calc(100vh - 165px);
   }
 }
 </style>

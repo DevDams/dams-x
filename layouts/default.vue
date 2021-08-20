@@ -43,4 +43,10 @@ body.dark .navbar {
 .toggleBtn {
   margin-left: 30px;
 }
+
+@media (max-width: 640px) {
+  .toggleBtn {
+    margin-left: 20px;
+  }
+}
 </style>

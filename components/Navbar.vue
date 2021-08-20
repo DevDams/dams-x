@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="menu">
-          <button class="text-3xl font-semibold outline-none" @click="openMenu">{{ text }}</button>
+          <button class="text-3xl font-bold outline-none" @click="openMenu">{{ text }}</button>
         </div>
       </div>
     </div>
@@ -48,16 +48,16 @@ export default {
   data () {
     return {
       open: false,
-      text: 'Menu'
+      text: 'menu'
     }
   },
   methods: {
     openMenu () {
       this.open = !this.open
       if (this.open) {
-        this.text = 'Close'
+        this.text = 'close'
       } else {
-        this.text = 'Menu'
+        this.text = 'menu'
       }
     }
   }
