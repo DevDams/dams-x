@@ -18,11 +18,11 @@
         </div>
         <div class="home-btn relative">
           <div class="btn absolute left-10 -bottom-56">
-            <nuxt-link to="/conatct">
+            <nuxt-link to="/contact">
               <button class="text-2xl font-extrabold">Contact me</button>
             </nuxt-link>
             <span class="block">or know more</span>
-            <nuxt-link to="/conatct">
+            <nuxt-link to="/about">
               <button class="about-btn text-2xl font-extrabold">About me</button>
             </nuxt-link>
           </div>
