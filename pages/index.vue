@@ -70,6 +70,12 @@ export default {
   }
 }
 
+@media (min-width: 1279px) {
+  .home-btn .btn {
+    top: 160px;
+  }
+}
+
 @media (max-width: 1279px) {
   .content {
     padding: 0 10px;
@@ -112,6 +118,7 @@ export default {
 
   .home-btn .btn {
     top: 250px;
+    left: 10px;
   }
 
   .home-btn .btn button {
@@ -121,11 +128,11 @@ export default {
 
 @media (max-height: 896px) {
   .content {
-    top: 380px;
+    top: 370px;
   }
 
   .about-btn {
-    margin-bottom: 40px;
+    margin-bottom: 65px;
   }
 }
 

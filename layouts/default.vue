@@ -1,9 +1,11 @@
 <template>
-  <div class="noise-bg">
-    <div class="bg-color">
+  <div>
+    <div>
       <Navbar class="navbar fixed top-0 z-40" />
       <Nuxt />
-      <ToggleButton class="toggleBtn sticky bottom-6 transform z-40" />
+      <div class="container mx-auto bg-red-200">
+        <ToggleButton class="toggleBtn fixed bottom-5 transform z-40" />
+      </div>
     </div>
   </div>
 </template>
