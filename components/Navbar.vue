@@ -5,7 +5,7 @@
         <div class="logo text-4xl font-extrabold">
           <div>
             <nuxt-link to="/">
-              <button class="text-4xl font-bold outline-none">ai.</button>
+              <button class="text-4xl font-bold outline-none border-2 border-black rounded-md p-1">ai.</button>
             </nuxt-link>
           </div>
         </div>
@@ -65,6 +65,10 @@ export default {
 </script>
 
 <style scoped>
+body.dark .logo a button {
+  border-color: white;
+}
+
 body.dark .bar {
   background-color: #131313;
 }
