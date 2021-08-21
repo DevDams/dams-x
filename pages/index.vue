@@ -132,7 +132,7 @@ export default {
   }
 
   .about-btn {
-    margin-bottom: 65px;
+    margin-bottom: 90px;
   }
 }
 
