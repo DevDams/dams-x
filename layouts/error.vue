@@ -47,9 +47,14 @@ body.dark img.black {
   display: block;
 }
 
+ a button {
+   outline: none;
+ }
+
 body.dark a button {
   background: rgb(245, 245, 245);
   color: black;
+  outline: none;
 }
 
 .error-content img {

@@ -1,11 +1,11 @@
 <template>
   <div class="w-full mynavbar bg-white">
-    <div class="bar w-full h-20 shadow-sm z-30">
+    <div class="bar w-full h-20 shadow-md z-30">
       <div class="container h-full bg-white mx-auto flex items-center justify-between px-6">
         <div class="logo text-4xl font-extrabold">
           <div>
             <nuxt-link to="/">
-              <button class="text-4xl font-bold outline-none border-2 border-black rounded-md p-1">ai.</button>
+              <button class="text-4xl font-bold outline-none rounded-md p-1">ai.</button>
             </nuxt-link>
           </div>
         </div>
@@ -33,7 +33,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact">
+              <nuxt-link to="/contacts">
                 <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10">Contacts</button>
               </nuxt-link>
             </li>

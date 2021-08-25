@@ -46,6 +46,14 @@ body.dark .navbar {
   margin-left: 30px;
 }
 
+button {
+  outline: none;
+}
+
+a button {
+  outline: none;
+}
+
 @media (max-width: 640px) {
   .toggleBtn {
     margin-left: 20px;

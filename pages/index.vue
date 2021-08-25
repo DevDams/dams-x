@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="home-content relative w-screen h-screen flex flex-col items-center justify-center">
+    <div class="home-content relative w-full h-screen flex flex-col items-center justify-center">
       <div class="content absolute container mx-auto px-20">
         <div class="para-1 para-left relative px-6">
           <div>
@@ -18,7 +18,7 @@
         </div>
         <div class="home-btn relative">
           <div class="btn absolute left-10 -bottom-56">
-            <nuxt-link to="/contact">
+            <nuxt-link to="/contacts">
               <button class="text-2xl font-extrabold">Contact me</button>
             </nuxt-link>
             <span class="block">or know more</span>
@@ -62,6 +62,10 @@ export default {
   right: 0;
   width: 600px;
   top: 10px;
+}
+
+a button {
+  outline: none;
 }
 
 @media (min-width: 1536px) {
