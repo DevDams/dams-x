@@ -5,36 +5,36 @@
         <div class="logo text-4xl font-extrabold">
           <div>
             <nuxt-link to="/">
-              <button class="text-4xl font-bold outline-none rounded-md p-1">ai.</button>
+              <button class="text-3xl font-bold outline-none rounded-md p-1">ai.</button>
             </nuxt-link>
           </div>
         </div>
         <div class="menu">
-          <button class="text-3xl font-bold outline-none" @click="openMenu">{{ text }}</button>
+          <button class="text-2xl font-bold outline-none" @click="openMenu">{{ text }}</button>
         </div>
       </div>
     </div>
-    <div class="menu_items absolute w-full h-screen top-0 left-0 bg-white flex items-center justify-center text-center" :class="open ? 'block' : 'hidden'">
+    <div class="menu_items absolute w-full h-screen top-0 left-0 bg-white flex items-center justify-center text-center" :class="open ? 'active' : ''">
         <div class="items mt-6">
           <ul>
             <li>
               <nuxt-link to="/">
-                <button class="lg:text-6xl sm:text-5xl font-medium">Home</button>
+                <button class="lg:text-6xl sm:text-5xl font-medium"  @click="openMenu">Home</button>
               </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/about">
-                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10">About</button>
+                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10"  @click="openMenu">About</button>
               </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/work">
-                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10">Projects</button>
+                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10"  @click="openMenu">Projects</button>
               </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/contacts">
-                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10">Contacts</button>
+                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10"  @click="openMenu">Contacts</button>
               </nuxt-link>
             </li>
           </ul>
@@ -91,6 +91,12 @@ button {
 
 .menu_items {
   z-index: -30;
+  transform: translateY(-100%);
+  transition: .4s all ease-in-out;
+}
+
+.menu_items.active {
+  transform: translateY(0);
 }
 
 @media (max-width: 640px) {
