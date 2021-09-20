@@ -3,7 +3,7 @@
     <div class="toogle container mx-auto flex items-end">
       <label class="switch relative block">
         <input type="checkbox" class="check" @change="dark">
-        <span class="slider round absolute top-0 left-0 right-0 bottom-0 bg-white border-myblack"></span>
+        <span class="slider round absolute top-0 left-0 right-0 bottom-0 bg-mygray border-myblack"></span>
       </label>
     </div>
   </div>
@@ -49,7 +49,7 @@ export default {
   position: absolute;
   cursor: pointer;
   transition: .3s all ease-in-out;
-  border: 3px solid black;
+  border: 3px solid #131313;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -58,18 +58,18 @@ export default {
   content: '';
   bottom: 14px;
   top: 6.5px;
-  background-color: rgb(0, 0, 0);
+  background-color: #131313;
   transition: .3s;
 }
 
 input:checked + .slider {
-  background-color: black;
-  border: 3px solid white;
+  background-color: #131313;
+  border: 3px solid #eee;
 }
 
 input:checked + .slider::before {
   transform: translateX(23px);
-  background-color: white;
+  background-color: #eee;
 }
 
 .slider.round {

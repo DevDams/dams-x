@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="email h-full flex items-center mt-3">
-          <p @click="copyEmail" class="copy-text cursor-pointer text-xl font-medium">Copy email</p>
+          <p @click="copyEmail" class="copy-text cursor-pointer text-xl font-medium">{{ copied_text }}</p>
           <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-link">ad.aimedesire@gmail.com</a>
         </div>
       </div>
@@ -65,7 +65,8 @@ export default {
     return {
       open: false,
       text: 'Menu',
-      copied: false
+      copied: false,
+      copied_text: 'Copy email'
     }
   },
   methods: {
@@ -83,14 +84,11 @@ export default {
       }
     },
     copyEmail () {
-      this.copied = true
+      this.copied_text = 'Copied !'
       setTimeout(() => {
-        this.copied = false
+        this.copied_text = 'Copy email'
       }, 1500)
       navigator.clipboard.writeText('ad.aimedesire@gmail.com')
-      if (document.execCommand('Copy')) {
-        console.log('Copied')
-      }
     }
   }
 }
