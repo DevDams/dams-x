@@ -1,45 +1,61 @@
 <template>
-  <div class="w-full mynavbar bg-white">
-    <div class="bar w-full h-20 shadow-md z-30">
-      <div class="container h-full bg-white mx-auto flex items-center justify-between px-6">
-        <div class="logo text-4xl font-extrabold">
+  <div class="w-full mynavbar px-5">
+    <!-- Desktop menu -->
+    <div class="hidden md:block bar w-full h-20 z-30">
+      <div class="flex w-11/12 h-full mx-auto items-center justify-between">
+        <div class="menu-desktop text-4xl font-extrabold">
           <div>
             <nuxt-link to="/">
-              <button class="text-3xl font-bold outline-none rounded-md p-1">ai.</button>
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1">Home</button>
+            </nuxt-link>
+            <nuxt-link to="/about">
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">About</button>
+            </nuxt-link>
+            <nuxt-link to="/work">
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">Work</button>
+            </nuxt-link>
+            <nuxt-link to="/contacts">
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">Contacts</button>
             </nuxt-link>
           </div>
         </div>
-        <div class="menu">
-          <button class="text-2xl font-bold outline-none" @click="openMenu">{{ text }}</button>
+        <div class="email h-full flex items-center mt-3">
+          <a href="mailto:ad.aimedesire@gmail.com" class="text-2xl">ad.aimedesire@gmail.com</a>
         </div>
       </div>
     </div>
-    <div class="menu_items absolute w-full h-screen top-0 left-0 bg-white flex items-center justify-center text-center" :class="open ? 'active' : ''">
-        <div class="items mt-6">
-          <ul>
-            <li>
-              <nuxt-link to="/">
-                <button class="lg:text-6xl sm:text-5xl font-medium"  @click="openMenu">Home</button>
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/about">
-                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10"  @click="openMenu">About</button>
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/work">
-                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10"  @click="openMenu">Projects</button>
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/contacts">
-                <button class="lg:text-6xl sm:text-5xl font-medium lg:mt-12 sm:mt-10"  @click="openMenu">Contacts</button>
-              </nuxt-link>
-            </li>
-          </ul>
+    <!-- Mobile menu -->
+    <div class="md:hidden bar-mobile relative w-full h-20 z-30">
+      <div class="flex w-11/12 h-full relative mx-auto items-center justify-between z-30">
+        <div class="menu-mobile text-4xl font-extrabold">
+          <div>
+            <button class="text-xl font-medium" @click="openMenu">{{ text }}</button>
+          </div>
+        </div>
+        <div class="email h-full flex items-center mt-3">
+          <p @click="copyEmail" class="copy-text cursor-pointer text-xl font-medium">Copy email</p>
+          <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-link">ad.aimedesire@gmail.com</a>
         </div>
       </div>
+      <div class="menu-mobile--items absolute top-0 left-0 w-full h-screen z-10">
+        <div class="flex items-center justify-center h-full text-center">
+          <div class="flex flex-col">
+            <nuxt-link to="/">
+              <button class="text-5xl font-medium outline-none rounded-md py-1">Home</button>
+            </nuxt-link>
+            <nuxt-link to="/about">
+              <button class="text-5xl font-medium outline-none rounded-md py-1 mt-8">About</button>
+            </nuxt-link>
+            <nuxt-link to="/work">
+              <button class="text-5xl font-medium outline-none rounded-md py-1 mt-8">Work</button>
+            </nuxt-link>
+            <nuxt-link to="/contacts">
+              <button class="text-5xl font-medium outline-none rounded-md py-1 mt-8">Contacts</button>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -48,16 +64,32 @@ export default {
   data () {
     return {
       open: false,
-      text: 'menu'
+      text: 'Menu',
+      copied: false
     }
   },
   methods: {
     openMenu () {
       this.open = !this.open
+      const items = document.querySelector('.menu-mobile--items')
       if (this.open) {
-        this.text = 'close'
+        items.style.display = 'block'
+        items.style.opacity = '1'
+        this.text = 'Close'
       } else {
-        this.text = 'menu'
+        items.style.display = 'none'
+        items.style.opacity = '0'
+        this.text = 'Menu'
+      }
+    },
+    copyEmail () {
+      this.copied = true
+      setTimeout(() => {
+        this.copied = false
+      }, 1500)
+      navigator.clipboard.writeText('ad.aimedesire@gmail.com')
+      if (document.execCommand('Copy')) {
+        console.log('Copied')
       }
     }
   }
@@ -65,11 +97,20 @@ export default {
 </script>
 
 <style scoped>
+button {
+  outline: none;
+  position: relative;
+}
+
 body.dark .logo a button {
   border-color: white;
 }
 
 body.dark .bar {
+  background-color: #131313;
+}
+
+body.dark .menu-mobile--items {
   background-color: #131313;
 }
 
@@ -85,43 +126,52 @@ body.dark .bar .container {
   height: 70px;
 }
 
-button {
+body.dark .menu-desktop button::after {
+  background-color: #eee;
+}
+
+.menu-mobile--items {
+  opacity: 0;
+  display: none;
+  transition: all .3s ease-out;
+}
+
+.menu-desktop button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 5px;
+  left: 0;
+  background-color: #131313;
+  transform-origin: bottom right;
+  transition: transform .3s ease-out;
+}
+
+.menu-desktop button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.bar-mobie .email input {
   outline: none;
+  border: none;
+  background-color: #eee;
+  visibility: hidden;
 }
 
-.menu_items {
-  z-index: -30;
-  transform: translateY(-100%);
-  transition: .4s all ease-in-out;
+.copy-text {
+  display: none;
 }
 
-.menu_items.active {
-  transform: translateY(0);
-}
-
-@media (max-width: 640px) {
-  .items ul li button {
-    margin-top: 36px;
-    font-weight: 600;
-    font-size: 40px;
+@media (max-width: 440px) {
+  #email-link {
+    display: none;
   }
-}
 
-@media (max-height: 570px) {
-  .items {
-    margin-top: 30px;
-  }
-}
-
-@media (max-height: 515px) {
-  .items {
-    margin-top: 50px;
-  }
-}
-
-@media (max-height: 478px) {
-  .items ul li button {
-    margin-top: 20px;
+  .copy-text {
+    display: block;
   }
 }
 </style>
