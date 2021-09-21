@@ -17,13 +17,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'myblack': '#131313',
-        'mygray': '#eee'
+        myblack: '#131313',
+        mygray: '#eee'
       }
-    },
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }

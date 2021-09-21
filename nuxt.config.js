@@ -23,9 +23,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~assets/fonts/style.css",
+    '~assets/fonts/style.css',
     // Global css
-    "~assets/css/global.css",
+    '~assets/css/global.css',
     // Burger button
     '@/assets/css/hamburgers.css',
     // Locomotive scroll
@@ -39,7 +39,7 @@ export default {
   // Error 404 page
   generate: {
     fallback: true
-  }, 
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

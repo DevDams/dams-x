@@ -1,131 +1,39 @@
 <template>
   <div>
-    <div class="contact-content relative flex md:items-center w-full h-screen">
-      <div
-        class="content container mx-auto flex flex-col md:flex-row items-center mt-20 md:mt-0"
-      >
-        <div class="content-text w-full md:w-1/2 px-8">
-          <div class="para">
-            <p class="text-3xl font-semibold">
-              You have an idea?, a project you want completed but you need help
-              ?, or you need a new dev on your team ? <br /><br />
-              Send me a message, it will be a pleasure to discuss it with you.
-            </p>
+    <div class="relative w-full h-screen text-center">
+      <div class="relative w-9/12 h-full mx-auto px-0 md:px-6 flex items-center justify-center">
+        <div class="mt-6">
+          <p class="text-3xl sm:text-5xl xl:text-5xl font-normal">Let's talk about your project</p>
+          <p class="text-lg sm:text-2xl md:text-2xl xl:text-xl mt-6">...and create something cool together</p>
+          <div class="form-btn mt-4 sm:mt-6">
+            <button class="text-xl sm:text-3xl xl:text-3xl uppercase font-semibold" @click="openForm">Get in touch</button>
           </div>
-          <div class="social-icon mt-5 md:mt-10 w-64 flex justify-between">
-            <a
-              href="https://twitter.com/dams9ix"
-              class="w-10 h-10 flex items-center justify-center"
-            >
-              <button class="w-full h-full">
-                <img
-                  src="~assets/icons/twitter-black.svg"
-                  alt="twitter icon"
-                  class="black w-8 h-8"
-                />
-                <img
-                  src="~assets/icons/twitter-white.svg"
-                  alt="twitter icon"
-                  class="white w-8 h-8"
-                />
-              </button>
-            </a>
-            <a
-              href="https://instagram.com/adam.9ix"
-              class="w-10 h-10 flex items-center justify-center"
-            >
-              <button class="w-full h-full">
-                <img
-                  src="~assets/icons/instagram-black.svg"
-                  alt="twitter icon"
-                  class="black w-8 h-8"
-                />
-                <img
-                  src="~assets/icons/instagram-white.svg"
-                  alt="twitter icon"
-                  class="white w-8 h-8"
-                />
-              </button>
-            </a>
-            <a
-              href="https://linkedin.com/in/adamsaimedesireofficial"
-              class="w-10 h-10 flex items-center justify-center"
-            >
-              <button class="w-full h-full">
-                <img
-                  src="~assets/icons/linkedin-black.svg"
-                  alt="twitter icon"
-                  class="black w-8 h-8"
-                />
-                <img
-                  src="~assets/icons/linkedin-white.svg"
-                  alt="twitter icon"
-                  class="white w-8 h-8"
-                />
-              </button>
-            </a>
-            <a
-              href="https://github.com/DevDams"
-              class="w-10 h-10 flex items-center justify-center"
-            >
-              <button class="w-full h-full">
-                <img
-                  src="~assets/icons/github-black.svg"
-                  alt="twitter icon"
-                  class="black w-8 h-8"
-                />
-                <img
-                  src="~assets/icons/github-white.svg"
-                  alt="twitter icon"
-                  class="white w-8 h-8"
-                />
-              </button>
-            </a>
+          <div class="network-btn mt-10">
+            <a href="https://linkedin.com/in/adamsaimedesireofficial" target="_blank" class="text-lg sm:text-2xl xl:text-2xl mx-1 sm:mx-3">LinkedIn</a>
+            <a href="https://github.com/DevDams"  target="_blank" class="text-lg sm:text-2xl xl:text-2xl mx-1 sm:mx-3">Github</a>
+            <a href="https://twitter.com/dams9ix"  target="_blank" class="text-lg sm:text-2xl xl:text-2xl mx-1 sm:mx-3">Twitter</a>
+            <a href="https://instagram.com/adam.9ix"  target="_blank" class="text-lg sm:text-2xl xl:text-2xl mx-1 sm:mx-3">Instagram</a>
           </div>
         </div>
-        <div
-          class="content-form w-full md:w-1/2 flex items-center justify-center"
-        >
-          <div class="contact-form flex items-center justify-center">
-            <form action="" class="w-full">
-              <div class="input w-full h-14">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Your name"
-                  required
-                  class="w-full h-full px-4 text-lg font-medium border-2 border-gray-500 rounded-md"
-                />
-              </div>
-              <div class="input w-full h-14 mt-4">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email"
-                  required
-                  class="w-full h-full px-4 text-lg font-medium border-2 border-gray-500 rounded-md"
-                />
-              </div>
-              <div class="input w-full mt-4">
-                <textarea
-                  name="content"
-                  id=""
-                  placeholder="Your message"
-                  required
-                  class="w-full px-4 pt-4 border-2 border-gray-500 text-lg font-medium rounded-md"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full px-4 mt-4 h-12 bg-black text-white font-semibold text-xl rounded-md"
-              >
-                Envoyer
-              </button>
-            </form>
-          </div>
+      </div>
+      <div class="absolute blur bg-myblack w-full h-full top-0 left-0 flex items-center justify-center" :class="open ? 'block' : 'hidden'" @click="openForm"></div>
+      <div class="box absolute bg-white top-1/2 left-1/2" :class="open ? 'block' : 'hidden'">
+        <div class="box-header bg-myblack text-mygray text-center px-4 py-3">
+          <h3 class="font-semibold capitalize text-2xl">Let's work together !</h3>
+          <p class="text-lg capitalize">Leave your message and i will get in touch as soon as possible</p>
         </div>
+        <form action="post" class="px-4 mt-6">
+          <div class="fullname">
+            <input type="text" name="fullname" id="fullname" class="px-2 border-2 border-gray-300 focus:border-gray-600 w-full h-12 font-normal text-myblack">
+          </div>
+          <div class="email mt-3">
+            <input type="email" name="email" id="email"  class="px-2 border-2 border-gray-300 focus focus:border-myblack w-full h-12 font-normal text-myblack">
+          </div>
+          <div class="message mt-3">
+            <textarea name="message" id="message"  class="px-2 pt-2 border-2 border-gray-300 focus focus:border-myblack w-full h-28"></textarea>
+          </div>
+          <button type="submit" class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold">Send</button>
+        </form>
       </div>
     </div>
   </div>
@@ -145,112 +53,58 @@ export default {
         }
       ]
     }
+  },
+  data () {
+    return {
+      open: false
+    }
+  },
+  methods: {
+    openForm () {
+      this.open = !this.open
+    }
   }
 }
 </script>
 
 <style scoped>
-body .black {
-  display: block;
-}
-
-body .white {
-  display: none;
-}
-
-body.dark .black {
-  display: none;
-}
-
-body.dark .white {
-  display: block;
-}
-
-body.dark input, body.dark textarea {
-  color: black;
-  border: 2px solid black;
-  background: rgb(240, 237, 237);
-}
-
-body.dark input::placeholder, body.dark textarea::placeholder {
-  color: #6b7280;
-}
-
-.contact-form {
-  width: 70%;
-  height: 500px;
-  margin-top: 40px;
-}
-
-input {
+button, input, textarea {
   outline: none;
 }
 
 textarea {
   resize: none;
-  height: 120px;
-  outline: none;
 }
 
-input:focus,
-textarea:focus {
-  border-color: black;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+.blur {
+  opacity: .3;
 }
 
-@media (max-width: 1279px) {
-  .contact-form {
-    width: 85%;
+.box {
+  width: 350px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 440px) {
+  .box {
+    width: 90%;
+  }
+
+  .box-header h3, .box-header p {
+    font-size: 18px;
   }
 }
 
-@media (max-width: 1023px) {
-  .contact-form {
-    width: 100%;
-  }
-
-  .content-text {
-    margin-top: 70px;
+@media (max-width: 393px) {
+  .network-btn a {
+    font-size: 16px;
   }
 }
 
-@media (min-width: 768px) and (max-height: 600px) {
-  .content {
-    margin-top: 150px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 768px) and (max-height: 530px) {
-  .content {
-    margin-top: 200px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  p {
-    font-size: 28px;
-  }
-
-  .contact-form {
-    width: 85%;
-    height: 430px;
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 420px) {
-  .content-text {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 318px) {
-  p {
-    font-size: 26px;
+@media (max-width: 332px) {
+  .box {
+    height: 475px;
   }
 }
 </style>
