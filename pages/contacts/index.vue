@@ -76,6 +76,10 @@ textarea {
   resize: none;
 }
 
+body.dark form {
+  color: #131313;
+}
+
 .blur {
   opacity: .3;
 }
