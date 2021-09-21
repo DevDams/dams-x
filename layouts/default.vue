@@ -4,7 +4,7 @@
       <Navbar class="navbar fixed top-0 z-40" />
       <Nuxt />
       <div class="w-11/12 mx-auto">
-        <ToggleButton class="toggleBtn fixed bottom-5 transform z-40" />
+        <ToggleButton class="toggleBtn fixed left-2 bottom-5 transform z-40" />
       </div>
     </div>
   </div>

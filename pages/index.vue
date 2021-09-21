@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-screen text-left">
     <div class="w-9/12 h-full mx-auto px-0 md:px-6 flex flex-col items-center justify-center">
-      <div class="mt-6">
+      <div class="mt-10">
         <p class="text-xl sm:text-2xl md:text-3xl xl:text-5xl">
           I'm Aimé, a javascript developer specialized in vue.js
         </p>
