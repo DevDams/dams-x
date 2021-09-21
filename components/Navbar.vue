@@ -37,20 +37,20 @@
           <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-link">ad.aimedesire@gmail.com</a>
         </div>
       </div>
-      <div class="menu-mobile--items absolute top-0 left-0 w-full h-screen z-10">
+      <div class="menu-mobile--items absolute top-0 left-0 bg-mygray w-full h-screen z-10">
         <div class="flex items-center justify-center h-full text-center">
           <div class="flex flex-col">
             <nuxt-link to="/">
-              <button class="text-5xl font-medium outline-none rounded-md py-1">Home</button>
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1">Home</button>
             </nuxt-link>
             <nuxt-link to="/about">
-              <button class="text-5xl font-medium outline-none rounded-md py-1 mt-8">About</button>
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8">About</button>
             </nuxt-link>
             <nuxt-link to="/work">
-              <button class="text-5xl font-medium outline-none rounded-md py-1 mt-8">Work</button>
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8">Work</button>
             </nuxt-link>
             <nuxt-link to="/contacts">
-              <button class="text-5xl font-medium outline-none rounded-md py-1 mt-8">Contacts</button>
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8">Contacts</button>
             </nuxt-link>
           </div>
         </div>
