@@ -3,10 +3,10 @@
     <div class="relative w-full h-screen text-center">
       <div class="relative w-9/12 h-full mx-auto px-0 md:px-6 flex items-center justify-center">
         <div class="mt-6">
-          <p class="text-3xl sm:text-5xl xl:text-5xl font-normal">Let's talk about your project</p>
+          <p class="text-3xl sm:text-5xl xl:text-6xl font-normal">Let's talk about your project</p>
           <p class="text-lg sm:text-2xl md:text-2xl xl:text-xl mt-6">...and create something cool together</p>
           <div class="form-btn mt-4 sm:mt-6">
-            <button class="text-xl sm:text-3xl xl:text-3xl uppercase font-semibold" @click="openForm">Get in touch</button>
+            <button class="text-xl sm:text-3xl xl:text-3xl uppercase font-medium" @click="openForm">Get in touch</button>
           </div>
           <div class="network-btn mt-10">
             <a href="https://linkedin.com/in/adamsaimedesireofficial" target="_blank" class="text-lg sm:text-2xl xl:text-2xl mx-1 sm:mx-3">LinkedIn</a>
