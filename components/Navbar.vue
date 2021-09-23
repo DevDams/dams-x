@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full mynavbar px-5">
+  <div class="w-full mynavbar bg-mygray px-5">
     <!-- Desktop menu -->
-    <div class="hidden md:block bar w-full h-20 z-30">
+    <div class="hidden md:block bar bg-mygray w-full h-20 z-30">
       <div class="flex w-11/12 h-full mx-auto items-center justify-between">
         <div class="menu-desktop text-4xl font-extrabold">
           <div>
@@ -25,7 +25,7 @@
       </div>
     </div>
     <!-- Mobile menu -->
-    <div class="md:hidden bar-mobile relative w-full h-20 z-30">
+    <div class="md:hidden bar-mobile bg-mygray relative w-full h-20 z-30">
       <div class="flex w-11/12 h-full relative mx-auto items-center justify-between z-30">
         <div class="menu-mobile text-4xl font-extrabold">
           <div>
@@ -37,7 +37,7 @@
           <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-link">ad.aimedesire@gmail.com</a>
         </div>
       </div>
-      <div class="menu-mobile--items absolute top-0 left-0 bg-mygray w-full h-screen z-10">
+      <div class="menu-mobile--items absolute top-0 -left-5 bg-mygray w-screen h-screen z-10">
         <div class="flex items-center justify-center h-full text-center">
           <div class="flex flex-col">
             <nuxt-link to="/">
@@ -105,6 +105,10 @@ body.dark .logo a button {
 }
 
 body.dark .bar {
+  background-color: #131313;
+}
+
+body.dark .bar-mobile {
   background-color: #131313;
 }
 
