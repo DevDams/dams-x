@@ -81,7 +81,7 @@
       </div>
       <div
         data-scroll-section
-        class="container mx-auto flex items-center h-24 mt-32"
+        class="container mx-auto flex items-center h-24 mt-16 sm:mt-32"
       ></div>
     </div>
   </div>
