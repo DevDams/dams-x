@@ -39,7 +39,7 @@
       </div>
       <div class="menu-mobile--items absolute top-0 -left-5 bg-mygray w-screen h-screen z-10">
         <div class="flex items-center justify-center h-full text-center">
-          <div class="flex flex-col">
+          <div class="flex flex-col -ml-2">
             <nuxt-link to="/">
               <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1" @click="openMenu">Home</button>
             </nuxt-link>
