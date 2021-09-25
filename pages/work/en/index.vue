@@ -22,6 +22,10 @@
             Pinkix is a note app build with NuxtJs that allow to save your idea
             or just use it like a block note.
           </p>
+          <div class="mt-4 flex items-center justify-between sm:w-64">
+            <a href="" class="font-semibold underline text-lg">Github</a>
+            <a href="https://pinkix.netlify.app/" class="font-semibold underline text-lg">Explore</a>
+          </div>
         </div>
       </div>
       <div
@@ -36,9 +40,13 @@
             #HTML #CSS #Jacascript #Frontend
           </h3>
           <p class="text-md: lg:text-xl mt-2">
-            This project is a clone of the home page of the MAD agency official
+            This project is a clone of the home page of the <a href="mad.ac" class="underline">MAD agency</a> official
             website released in Marsh 2021.
           </p>
+          <div class="mt-4 flex items-center justify-between sm:w-64">
+            <a href="" class="font-semibold underline text-lg">Github</a>
+            <a href="#" class="font-semibold underline text-lg">Explore</a>
+          </div>
         </div>
         <div class="w-11/12 sm:w-1/2 h-full bg-black"></div>
       </div>
@@ -58,6 +66,10 @@
             Hi Share is a website for sharing image files through a link by
             uploading them to the site and then sharing the generated link.
           </p>
+          <div class="mt-4 flex items-center justify-between sm:w-64">
+            <a href="" class="font-semibold underline text-lg">Github</a>
+            <a href="http://hi-shared.herokuapp.com/" class="font-semibold underline text-lg">Explore</a>
+          </div>
         </div>
       </div>
       <div
@@ -76,6 +88,10 @@
             where users create an account and share the music that interests
             them.
           </p>
+          <div class="mt-4 flex items-center justify-between sm:w-64">
+            <a href="" class="font-semibold underline text-lg">Github</a>
+            <a href="https://muse-x.netlify.app/" class="font-semibold underline text-lg">Explore</a>
+          </div>
         </div>
         <div class="w-11/12 sm:w-1/2 h-full bg-black"></div>
       </div>

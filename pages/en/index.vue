@@ -3,13 +3,14 @@
     <div class="w-9/12 h-full mx-auto px-0 md:px-6 flex flex-col items-center justify-center">
       <div class="mt-10">
         <p class="text-xl sm:text-2xl md:text-3xl xl:text-5xl">
-          Je suis Aimé, développeur javascript spécialisé vue.js
+          I'm Aimé, a javascript developer specialized in vue.js
         </p>
         <p class="text-xl sm:text-2xl md:text-3xl xl:text-5xl">
-          Je transforme votre boule de papier en un avion en papier, créant des trucs géniaux que les gens appellent généralement site web ou application.
+          I turn your paper ball into a beautiful paper plane, creating awesome
+          stuff that people usually call website, applications or platforms.
         </p>
         <div class="mt-6">
-          <nuxt-link to="/about" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl font-medium">plus...</nuxt-link>
+          <nuxt-link to="/about" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl font-medium">more...</nuxt-link>
         </div>
         <div class="contact-btn text-right mt-10">
           <nuxt-link to="/contacts" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl">Contacts</nuxt-link>
@@ -21,7 +22,6 @@
 
 <script>
 export default {
-  layout: 'francais',
   head () {
     return {
       title: 'Portfolio - Adams Aimé-Désiré',
@@ -30,7 +30,7 @@ export default {
           hid: 'description',
           name: 'description',
           content:
-            'Adams Aimé-Désiré, front-end développeur. Travaillonns ensemble et construisons de grande chose.'
+            'Adams Aimé-Désiré, front-end developer. Let\'s wrok together and build awesome stuff'
         }
       ]
     }

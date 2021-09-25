@@ -9,7 +9,7 @@
           Je transforme votre boule de papier en un avion en papier, créant des trucs géniaux que les gens appellent généralement site web ou application.
         </p>
         <div class="mt-6">
-          <nuxt-link to="/about" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl font-medium">plus...</nuxt-link>
+          <nuxt-link to="/about" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl font-medium">more...</nuxt-link>
         </div>
         <div class="contact-btn text-right mt-10">
           <nuxt-link to="/contacts" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl">Contacts</nuxt-link>
@@ -30,7 +30,7 @@ export default {
           hid: 'description',
           name: 'description',
           content:
-            'Adams Aimé-Désiré, front-end développeur. Travaillonns ensemble et construisons de grande chose.'
+            'Adams Aimé-Désiré, front-end developer. Let\'s wrok together and build awesome stuff'
         }
       ]
     }

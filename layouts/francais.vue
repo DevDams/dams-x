@@ -1,11 +1,11 @@
 <template>
   <div>
     <div>
-      <NavbarEnglish class="navbar fixed top-0 z-40" />
+      <NavbarFrancais class="navbar fixed top-0 z-40" />
       <Nuxt />
       <div class="w-11/12 mx-auto">
         <ToggleButton class="toggleBtn fixed left-2 bottom-5 transform z-40" />
-        <LanguageEN class="langueBtn fixed right-6 bottom-5 z-40" />
+        <LanguageFR class="langueBtn fixed right-6 bottom-5 z-40" />
       </div>
     </div>
   </div>
