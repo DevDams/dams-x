@@ -31,9 +31,9 @@
             <h1 class="text-5xl sm:text-6xl font-bold">Quelles sont les <br> compétences que j'ai ?</h1>
           </div>
           <div class="content flex items-center mt-14 lg:px-16">
-            <div class="content-text md:pr-16 md:pr-32 2xl:pr-0 2xl:w-3/5">
+              <div class="content-text md:pr-16 mdm:pr-32 2xl:pr-0 2xl:w-3/5">
               <p class="text-lg sm:text-xl font-normal">
-                Ayant commencé l'apprentissage de la programmation en autodidacte, j'ai acquis des compétences que j'ai approfondis au fil des <nuxt-link to="/work" class="underline">projets sur lesquels j'ai travaillé.</nuxt-link>.
+                Ayant commencé l'apprentissage de la programmation en autodidacte, j'ai acquis des compétences que j'ai approfondis au fil des <nuxt-link to="/work/fr" class="underline">projets sur lesquels j'ai travaillé.</nuxt-link>.
                 Aussi, mon passage NaN, qui est une école de formation à la programmation, a été quelque chose de vraiment utile dans mons apprentissage.
               </p>
               <h1 class="text-2xl sm:text-3xl font-semibold mt-4">
@@ -88,7 +88,7 @@ export default {
   layout: 'francais',
   head () {
     return {
-      title: 'About - Adams Aimé-Désiré',
+      title: 'A propos - Adams Aimé-Désiré',
       meta: [
         {
           hid: 'description',

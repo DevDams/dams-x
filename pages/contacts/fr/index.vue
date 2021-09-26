@@ -44,7 +44,7 @@ export default {
   layout: 'francais',
   head () {
     return {
-      title: 'Contact me - Adams Aimé-Désiré',
+      title: 'Contactez moi - Adams Aimé-Désiré',
       meta: [
         {
           hid: 'description',

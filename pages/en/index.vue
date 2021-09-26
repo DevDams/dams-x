@@ -10,10 +10,10 @@
           stuff that people usually call website, applications or platforms.
         </p>
         <div class="mt-6">
-          <nuxt-link to="/about" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl font-medium">more...</nuxt-link>
+          <nuxt-link to="/about/en" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl font-medium">more...</nuxt-link>
         </div>
         <div class="contact-btn text-right mt-10">
-          <nuxt-link to="/contacts" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl">Contacts</nuxt-link>
+          <nuxt-link to="/contacts/en" class="text-xl sm:text-2xl md:text-3xl xl:text-5xl">Contacts</nuxt-link>
         </div>
       </div>
     </div>
