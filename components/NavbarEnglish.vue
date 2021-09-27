@@ -5,25 +5,17 @@
       <div class="flex w-11/12 h-full mx-auto items-center justify-between">
         <div class="menu-desktop text-4xl font-extrabold">
           <div>
-            <nuxt-link to="/">
-              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1">
-                Home
-              </button>
+            <nuxt-link to="/en">
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1">Home</button>
             </nuxt-link>
-            <nuxt-link to="/about">
-              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">
-                About
-              </button>
+            <nuxt-link to="/about/en">
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">About</button>
             </nuxt-link>
-            <nuxt-link to="/work">
-              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">
-                Work
-              </button>
+            <nuxt-link to="/work/en">
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">Work</button>
             </nuxt-link>
-            <nuxt-link to="/contacts">
-              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">
-                Contacts
-              </button>
+            <nuxt-link to="/contacts/en">
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">Contacts</button>
             </nuxt-link>
           </div>
         </div>
@@ -43,34 +35,24 @@
           </div>
         </div>
         <div class="email h-full flex items-center mt-3">
-          <p class="copy-text cursor-pointer text-xl font-medium" @click="copyEmail">
-            {{ copied_text }}
-          </p>
-          <a id="email-link" href="mailto:ad.aimedesire@gmail.com" class="text-xl">ad.aimedesire@gmail.com</a>
+          <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-mob">Email</a>
+          <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-link">ad.aimedesire@gmail.com</a>
         </div>
       </div>
       <div class="menu-mobile--items absolute top-0 -left-5 bg-mygray w-screen h-screen z-10">
         <div class="flex items-center justify-center h-full text-center">
           <div class="flex flex-col -ml-2">
-            <nuxt-link to="/">
-              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1" @click="openMenu">
-                Home
-              </button>
+            <nuxt-link to="/en">
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1" @click="openMenu">Home</button>
             </nuxt-link>
-            <nuxt-link to="/about">
-              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">
-                About
-              </button>
+            <nuxt-link to="/about/en">
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">About</button>
             </nuxt-link>
-            <nuxt-link to="/work">
-              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">
-                Work
-              </button>
+            <nuxt-link to="/work/en">
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">Work</button>
             </nuxt-link>
-            <nuxt-link to="/contacts">
-              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">
-                Contacts
-              </button>
+            <nuxt-link to="/contacts/en">
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">Contacts</button>
             </nuxt-link>
           </div>
         </div>
@@ -183,6 +165,10 @@ body.dark .menu-desktop button::after {
   visibility: hidden;
 }
 
+#email-mob {
+  display: none;
+}
+
 .copy-text {
   display: none;
 }
@@ -190,6 +176,10 @@ body.dark .menu-desktop button::after {
 @media (max-width: 440px) {
   #email-link {
     display: none;
+  }
+
+  #email-mob {
+    display: block;
   }
 
   .copy-text {

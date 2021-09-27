@@ -9,7 +9,7 @@ export default {
   head: {
     title: 'Adams Aimé-Désiré',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
