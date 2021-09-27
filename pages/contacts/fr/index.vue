@@ -22,18 +22,33 @@
           <h3 class="font-semibold capitalize text-2xl">Travaillons ensemble !</h3>
           <p class="text-lg capitalize">Laissez-moi un message et je répondrai aussi vite que possible.</p>
         </div>
-        <form action="post" class="px-4 mt-6">
+        <form v-if="response === ''" action="post" class="px-4 mt-6">
           <div class="fullname">
-            <input type="text" name="fullname" id="fullname" class="px-2 border-2 border-gray-300 focus:border-gray-600 w-full h-12 font-normal text-myblack">
+            <input
+              v-model="fullname"
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Nom complet"
+              class="px-2 border-2 border-gray-300 focus:border-gray-600 w-full h-12 font-normal text-myblack">
           </div>
           <div class="email mt-3">
-            <input type="email" name="email" id="email"  class="px-2 border-2 border-gray-300 focus focus:border-myblack w-full h-12 font-normal text-myblack">
+            <input
+              v-model="email"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="px-2 border-2 border-gray-300 focus focus:border-myblack w-full h-12 font-normal text-myblack">
           </div>
           <div class="message mt-3">
-            <textarea name="message" id="message"  class="px-2 pt-2 border-2 border-gray-300 focus focus:border-myblack w-full h-28"></textarea>
+            <textarea v-model="message" name="message" id="message" placeholder="Message" class="px-2 pt-2 border-2 border-gray-300 focus focus:border-myblack w-full h-28"></textarea>
           </div>
-          <button type="submit" class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold">Envoyer</button>
+          <button type="submit" class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold" @click="sendMessage">Envoyer</button>
         </form>
+        <div v-if="response !== ''" class="success-error bg-white w-full h-56 mt-12 flex items-center justify-center">
+          <p class="text-xl font-medium text-center">{{ response.message }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -57,12 +72,25 @@ export default {
   },
   data () {
     return {
-      open: false
+      open: false,
+      fullname: '',
+      email: '',
+      message: '',
+      response: ''
     }
   },
   methods: {
     openForm () {
       this.open = !this.open
+    },
+    sendMessage (e) {
+      e.preventDefault()
+      const data = {
+        fullname: this.fullname,
+        email: this.email,
+        message: this.message
+      }
+      console.log(data)
     }
   }
 }
