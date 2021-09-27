@@ -10,7 +10,7 @@
         data-scroll-section
         class="container mx-auto flex flex-col sm:flex-row items-center h-96 mt-24"
       >
-        <div class="w-11/12 sm:w-1/2 h-full bg-black"></div>
+        <div class="w-11/12 sm:w-1/2 h-full bg-black" />
         <div class="w-11/12 sm:w-1/2 sm:pl-8 md:pl-16 mt-6 sm:mt-0 pr-6 py-4">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">
             <a href="https://pinkix.netlify.app/">Note App.</a>
@@ -40,13 +40,13 @@
             website released in Marsh 2021.
           </p>
         </div>
-        <div class="w-11/12 sm:w-1/2 h-full bg-black"></div>
+        <div class="w-11/12 sm:w-1/2 h-full bg-black" />
       </div>
       <div
         data-scroll-section
         class="container mx-auto flex flex-col sm:flex-row items-center h-96 mt-16 sm:mt-24"
       >
-        <div class="w-11/12 sm:w-1/2 h-full bg-black"></div>
+        <div class="w-11/12 sm:w-1/2 h-full bg-black" />
         <div class="w-11/12 sm:w-1/2 sm:pl-8 md:pl-16 mt-6 sm:mt-0 pr-6 py-4">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">
             <a href="http://hi-shared.herokuapp.com/">Hi Share</a>
@@ -77,12 +77,12 @@
             them.
           </p>
         </div>
-        <div class="w-11/12 sm:w-1/2 h-full bg-black"></div>
+        <div class="w-11/12 sm:w-1/2 h-full bg-black" />
       </div>
       <div
         data-scroll-section
         class="container mx-auto flex items-center h-24 mt-16 sm:mt-32"
-      ></div>
+      />
     </div>
   </div>
 </template>

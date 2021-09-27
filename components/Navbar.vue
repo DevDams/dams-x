@@ -6,16 +6,24 @@
         <div class="menu-desktop text-4xl font-extrabold">
           <div>
             <nuxt-link to="/">
-              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1">Home</button>
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1">
+                Home
+              </button>
             </nuxt-link>
             <nuxt-link to="/about">
-              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">About</button>
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">
+                About
+              </button>
             </nuxt-link>
             <nuxt-link to="/work">
-              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">Work</button>
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">
+                Work
+              </button>
             </nuxt-link>
             <nuxt-link to="/contacts">
-              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">Contacts</button>
+              <button class="text-xl lg:text-2xl font-medium outline-none rounded-md py-1 ml-5">
+                Contacts
+              </button>
             </nuxt-link>
           </div>
         </div>
@@ -29,28 +37,40 @@
       <div class="flex w-11/12 h-full relative mx-auto items-center justify-between z-30">
         <div class="menu-mobile text-4xl font-extrabold">
           <div>
-            <button class="text-xl font-medium" @click="openMenu">{{ text }}</button>
+            <button class="text-xl font-medium" @click="openMenu">
+              {{ text }}
+            </button>
           </div>
         </div>
         <div class="email h-full flex items-center mt-3">
-          <p @click="copyEmail" class="copy-text cursor-pointer text-xl font-medium">{{ copied_text }}</p>
-          <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-link">ad.aimedesire@gmail.com</a>
+          <p class="copy-text cursor-pointer text-xl font-medium" @click="copyEmail">
+            {{ copied_text }}
+          </p>
+          <a id="email-link" href="mailto:ad.aimedesire@gmail.com" class="text-xl">ad.aimedesire@gmail.com</a>
         </div>
       </div>
       <div class="menu-mobile--items absolute top-0 -left-5 bg-mygray w-screen h-screen z-10">
         <div class="flex items-center justify-center h-full text-center">
           <div class="flex flex-col -ml-2">
             <nuxt-link to="/">
-              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1" @click="openMenu">Home</button>
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1" @click="openMenu">
+                Home
+              </button>
             </nuxt-link>
             <nuxt-link to="/about">
-              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">About</button>
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">
+                About
+              </button>
             </nuxt-link>
             <nuxt-link to="/work">
-              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">Work</button>
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">
+                Work
+              </button>
             </nuxt-link>
             <nuxt-link to="/contacts">
-              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">Contacts</button>
+              <button class="text-4xl sm:text-5xl font-medium outline-none rounded-md py-1 mt-4 sm:mt-8" @click="openMenu">
+                Contacts
+              </button>
             </nuxt-link>
           </div>
         </div>

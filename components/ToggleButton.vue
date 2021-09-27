@@ -3,7 +3,7 @@
     <div class="toogle container mx-auto flex items-end">
       <label class="switch relative block">
         <input type="checkbox" class="check" @change="dark">
-        <span class="slider round absolute top-0 left-0 right-0 bottom-0 bg-mygray border-myblack"></span>
+        <span class="slider round absolute top-0 left-0 right-0 bottom-0 bg-mygray border-myblack" />
       </label>
     </div>
   </div>
