@@ -44,7 +44,7 @@
           <div class="message mt-3">
             <textarea v-model="message" name="message" id="message" placeholder="Message" class="px-2 pt-2 border-2 border-gray-300 focus focus:border-myblack w-full h-28"></textarea>
           </div>
-          <button type="submit" class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold" @click="sendMessage">Envoyer</button>
+          <button type="submit" id="submit" class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold" @click="sendMessage">Envoyer</button>
         </form>
         <div v-if="response !== ''" class="success-error bg-white w-full h-56 mt-12 flex items-center justify-center">
           <p class="text-xl font-medium text-center">{{ response.messageFr }}</p>

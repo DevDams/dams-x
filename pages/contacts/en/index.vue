@@ -96,6 +96,7 @@
           </div>
           <button
             type="submit"
+            id="submit"
             class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold"
             @click="sendMessage"
           >
