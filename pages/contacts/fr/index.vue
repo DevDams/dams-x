@@ -47,7 +47,7 @@
           <button type="submit" class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold" @click="sendMessage">Envoyer</button>
         </form>
         <div v-if="response !== ''" class="success-error bg-white w-full h-56 mt-12 flex items-center justify-center">
-          <p class="text-xl font-medium text-center">{{ response.message }}</p>
+          <p class="text-xl font-medium text-center">{{ response.messageFr }}</p>
         </div>
       </div>
     </div>
@@ -55,6 +55,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   layout: 'francais',
   head () {
@@ -83,14 +84,20 @@ export default {
     openForm () {
       this.open = !this.open
     },
-    sendMessage (e) {
-      e.preventDefault()
-      const data = {
-        fullname: this.fullname,
-        email: this.email,
-        message: this.message
+    async sendMessage (e) {
+      try {
+        e.preventDefault()
+        const data = {
+          fullname: this.fullname,
+          email: this.email,
+          message: this.message
+        }
+        await axios.post('https://damsx.herokuapp.com/api/post/message', data).then((response) => {
+          this.response = response.data
+        })
+      } catch (error) {
+        console.log(error)
       }
-      console.log(data)
     }
   }
 }
