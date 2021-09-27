@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="email h-full flex items-center mt-3">
-          <p @click="copyEmail" class="copy-text cursor-pointer text-xl font-medium">{{ copied_text }}</p>
+          <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-mob">Email</a>
           <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-link">ad.aimedesire@gmail.com</a>
         </div>
       </div>
@@ -82,14 +82,14 @@ export default {
         items.style.opacity = '0'
         this.text = 'Menu'
       }
-    },
-    copyEmail () {
-      this.copied_text = 'Copié !'
-      setTimeout(() => {
-        this.copied_text = 'Copie email'
-      }, 1500)
-      navigator.clipboard.writeText('ad.aimedesire@gmail.com')
     }
+    // copyEmail () {
+    //   this.copied_text = 'Copié !'
+    //   setTimeout(() => {
+    //     this.copied_text = 'Copie email'
+    //   }, 1500)
+    //   navigator.clipboard.writeText('ad.aimedesire@gmail.com')
+    // }
   }
 }
 </script>
@@ -163,6 +163,10 @@ body.dark .menu-desktop button::after {
   visibility: hidden;
 }
 
+#email-mob {
+  display: none;
+}
+
 .copy-text {
   display: none;
 }
@@ -170,6 +174,10 @@ body.dark .menu-desktop button::after {
 @media (max-width: 440px) {
   #email-link {
     display: none;
+  }
+
+  #email-mob {
+    display: block;
   }
 
   .copy-text {

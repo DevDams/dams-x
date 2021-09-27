@@ -20,7 +20,7 @@
       <div class="box absolute bg-white top-1/2 left-1/2" :class="open ? 'block' : 'hidden'">
         <div class="box-header bg-myblack text-mygray text-center px-4 py-3">
           <h3 class="font-semibold capitalize text-2xl">Let's work together !</h3>
-          <p class="text-lg capitalize">Leave your message and i will get in touch as soon as possible</p>
+          <p class="text-lg capitalize">Leave me a message and i will get in touch as soon as possible</p>
         </div>
         <form action="post" class="px-4 mt-6">
           <div class="fullname">
@@ -82,12 +82,14 @@ body.dark form {
 
 .blur {
   opacity: .3;
+  z-index: 100;
 }
 
 .box {
   width: 350px;
   height: 450px;
   transform: translate(-50%, -50%);
+  z-index: 999;
 }
 
 @media (max-width: 440px) {

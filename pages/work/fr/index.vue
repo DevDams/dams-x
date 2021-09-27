@@ -3,7 +3,7 @@
     <div data-scroll-container>
       <div data-scroll-section>
         <h1 class="intro-text w-11/12 sm:w-full mx-auto text-5xl text-center uppercase font-bold">
-          Chose sur lesquelles j'ai travaillé
+          Choses sur lesquelles j'ai travaillé
         </h1>
       </div>
       <div
@@ -11,7 +11,9 @@
         class="container mx-auto flex flex-col sm:flex-row items-center h-auto sm:h-96 mt-24"
       >
         <div class="w-11/12 sm:w-1/2 h-full flex items-center">
-          <img src="~/assets/images/pinkix.png" alt="screenshot of project">
+          <a href="https://pinkix.netlify.app/" target="_blank">
+            <img src="~/assets/images/pinkix.png" alt="screenshot of project">
+          </a>
         </div>
         <div class="w-11/12 sm:w-1/2 sm:pl-8 md:pl-16 mt-6 sm:mt-0 pr-6 py-4">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">
@@ -41,7 +43,7 @@
             #HTML #CSS #Jacascript #Frontend
           </h3>
             <p class="text-md lg:text-xl mt-2">
-            Ce projet est une replique de la page d'accueil du site web official de <a href="https://mad.ac" class="underline">MAD agency</a> sorti en Marsh 2021.
+            Ce projet est une replique de la page d'accueil du site web officiel de <a href="https://mad.ac" class="underline font-medium">MAD agency</a> sorti en Marsh 2021.
           </p>
           <div class="mt-4 flex items-center justify-between sm:w-64">
             <a href="https://github.com/DevDams/mad.ac-clown" target="_blank" class="font-semibold underline text-lg">Github</a>
@@ -49,7 +51,9 @@
           </div>
         </div>
         <div class="w-11/12 sm:w-1/2 h-full flex items-center">
-          <img src="~/assets/images/mad-clone.png" alt="screenshot of project">
+          <a href="https://mad-clone.netlify.app/" target="_blank">
+            <img src="~/assets/images/mad-clone.png" alt="screenshot of project">
+          </a>
         </div>
       </div>
       <div
@@ -57,7 +61,9 @@
         class="container mx-auto flex flex-col sm:flex-row items-center h-auto sm:h-96 mt-16 sm:mt-24"
       >
         <div class="w-11/12 sm:w-1/2 h-full flex items-center">
-          <img src="~/assets/images/hi-share.png" alt="screenshot of project">
+          <a href="http://hi-shared.herokuapp.com/" target="_blank">
+            <img src="~/assets/images/hi-share.png" alt="screenshot of project">
+          </a>
         </div>
         <div class="w-11/12 sm:w-1/2 sm:pl-8 md:pl-16 mt-6 sm:mt-0 pr-6 py-4">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">
@@ -87,7 +93,7 @@
             #NuxtJS #CSS #TailwindCss #Node #mongoDB #Cloudinary #Fullstack
           </h3>
           <p class="text-md lg:text-xl mt-2">
-            Muse-X est un site de partage de musique reposant sur la meme idée que youtube. Où les utilisateurs peuvent créer des comptes et partager les musiques qui les intéressent.
+            Muse-X est un site de partage de musique reposant sur la même idée que youtube, où les utilisateurs peuvent créer des comptes et partager des musiques de leur choix.
           </p>
           <div class="mt-4 flex items-center justify-between sm:w-64">
             <a href="https://github.com/DevDams/musix" target="_blank" class="font-semibold underline text-lg">Github</a>
@@ -95,7 +101,9 @@
           </div>
         </div>
         <div class="w-11/12 sm:w-1/2 h-full flex items-center">
-          <img src="~/assets/images/muse-x.png" alt="screenshot of project">
+          <a href="https://muse-x.netlify.app/" target="_blank">
+            <img src="~/assets/images/muse-x.png" alt="screenshot of project">
+          </a>
         </div>
       </div>
       <div

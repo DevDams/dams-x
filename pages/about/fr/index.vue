@@ -28,13 +28,13 @@
         <div class="block mt-28 sm:mt-36 px-6 sm:px-0">
           <div class="title sm:flex sm:items-center">
             <div class="hidden sm:block sm:w-1/5 md:w-3/5 xl:w-2/4"></div>
-            <h1 class="text-5xl sm:text-6xl font-bold">Quelles sont les <br> compétences que j'ai ?</h1>
+            <h1 class="text-5xl sm:text-6xl font-bold">Quelles sont mes<br> compétences ?</h1>
           </div>
           <div class="content flex items-center mt-14 lg:px-16">
               <div class="content-text md:pr-16 mdm:pr-32 2xl:pr-0 2xl:w-3/5">
               <p class="text-lg sm:text-xl font-normal">
-                Ayant commencé l'apprentissage de la programmation en autodidacte, j'ai acquis des compétences que j'ai approfondis au fil des <nuxt-link to="/work/fr" class="underline">projets sur lesquels j'ai travaillé.</nuxt-link>.
-                Aussi, mon passage NaN, qui est une école de formation à la programmation, a été quelque chose de vraiment utile dans mons apprentissage.
+                Ayant commencé l'apprentissage de la programmation en autodidacte, j'ai acquis des compétences que j'ai approfondis au fil des <nuxt-link to="/work/fr" class="underline">projets sur lesquels j'ai travaillé.</nuxt-link>
+                Aussi, mon passage <a href="https://nan.ci" class="underline font-medium">NaN</a>, qui est une école de formation à la programmation, a été quelque chose de vraiment utile dans mon apprentissage.
               </p>
               <h1 class="text-2xl sm:text-3xl font-semibold mt-4">
                 Les compétences que j'ai
@@ -62,7 +62,7 @@
           <div class="content mt-10 lg:px-16">
             <div class="content-text md:w-3/5">
               <p class="text-lg sm:text-xl font-normal">
-                Ayant choisi d'etre développeur, je suis aussi attiré par des domaines différents de l'informatique. J'ai un réel amour pour la biologie et les animaux, spécialement les chats. Je passe la plupart de mon temps libre à jouer à des jeux vidéos, écrire ou lire. Et quand je le peux, je cuisine, juste pour le fun.
+                En plus du développement, j'ai un penchant pour certains domaines de l'informatique tels que : la modélisation 3D, le design, l'intelligence artificielle. J'aime aussi la biologie et les animaux, spécialement les chats. Je passe la plupart de mon temps libre à jouer à des jeux vidéos, écrire ou lire. Et quand je le peux, je cuisine, juste pour le fun.
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@
       <!-- Block 3 -->
       <div data-scroll-section class="container mx-auto">
         <div class="bottom-link mt-28 sm:mt-36 px-6 sm:px-0">
-          <p class="text-center text-xl sm:text-3xl font-medium uppercase">Près à partir ? <nuxt-link to="/contacts"><span class="underline">Contactez moi</span></nuxt-link></p>
+          <p class="text-center text-xl sm:text-3xl font-medium uppercase">Près à partir ?<br><nuxt-link to="/contacts"><span class="underline text-center">Contactez moi</span></nuxt-link></p>
         </div>
       </div>
       <div

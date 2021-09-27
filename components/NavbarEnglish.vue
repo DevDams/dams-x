@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="email h-full flex items-center mt-3">
-          <p @click="copyEmail" class="copy-text cursor-pointer text-xl font-medium">{{ copied_text }}</p>
+          <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-mob">Email</a>
           <a href="mailto:ad.aimedesire@gmail.com" class="text-xl" id="email-link">ad.aimedesire@gmail.com</a>
         </div>
       </div>
@@ -163,6 +163,10 @@ body.dark .menu-desktop button::after {
   visibility: hidden;
 }
 
+#email-mob {
+  display: none;
+}
+
 .copy-text {
   display: none;
 }
@@ -170,6 +174,10 @@ body.dark .menu-desktop button::after {
 @media (max-width: 440px) {
   #email-link {
     display: none;
+  }
+
+  #email-mob {
+    display: block;
   }
 
   .copy-text {

@@ -13,12 +13,12 @@
 
 <script>
 export default {
-  mounted () {
-    if (localStorage.getItem('darkmode')) {
-      document.body.classList.toggle('dark')
-      document.querySelector('.check').checked = true
-    }
-  }
+  // mounted () {
+  //   if (localStorage.getItem('darkmode')) {
+  //     document.body.classList.toggle('dark')
+  //     document.querySelector('.check').checked = true
+  //   }
+  // }
 }
 </script>
 
