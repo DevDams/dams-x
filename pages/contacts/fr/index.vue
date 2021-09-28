@@ -87,14 +87,22 @@ export default {
     async sendMessage (e) {
       try {
         e.preventDefault()
-        const data = {
-          fullname: this.fullname,
-          email: this.email,
-          message: this.message
+        const sendBtn = document.querySelector('#submit')
+        if (this.fullname === '' || this.email === '' || this.message === '') {
+          sendBtn.style.pointerEvents = 'none'
+          sendBtn.style.backgroundColor = 'red'
+        } else {
+          sendBtn.style.pointerEvents = 'all'
+          sendBtn.style.backgroundColor = 'blue'
+          const data = {
+            fullname: this.fullname,
+            email: this.email,
+            message: this.message
+          }
+          await axios.post('https://damsx.herokuapp.com/api/post/message', data).then((response) => {
+            this.response = response.data
+          })
         }
-        await axios.post('https://damsx.herokuapp.com/api/post/message', data).then((response) => {
-          this.response = response.data
-        })
       } catch (error) {
         console.log(error)
       }
