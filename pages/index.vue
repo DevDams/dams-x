@@ -29,8 +29,82 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content:
-            'Adams Aimé-Désiré, front-end développeur. Travaillonns ensemble et construisons de grande chose.'
+          content: 'Adams Aimé-Désiré, javascript front-end développeur. Travaillonns ensemble et construisons de grande chose.'
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@nuxt_js'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@dams9ix'
+        },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: 'https://damsx.netlify.app/'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Portfolio - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Adams Aimé-Désiré, javascript front-end développeur. Travaillonns ensemble et construisons de grande chose.'
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: 'https://damsx.netlify.app/_nuxt/img/big-logo.053ce4c.png'
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: 'Adams Aimé-Désiré logo'
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'Portfolio - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://damsx.netlify.app/'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Portfolio - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'Adams Aimé-Désiré, javascript front-end développeur. Travaillonns ensemble et construisons de grande chose.'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://damsx.netlify.app/_nuxt/img/big-logo.053ce4c.png'
+        },
+        {
+          hid: 'og:image:alt',
+          name: 'og:image:alt',
+          content: 'Adams Aimé-Désiré logo'
         }
       ]
     }
