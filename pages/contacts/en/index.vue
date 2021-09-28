@@ -97,10 +97,11 @@
           <button
             type="submit"
             id="submit"
-            class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold"
+            class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold flex items-center justify-center"
             @click="sendMessage"
           >
-            Send
+            <p v-if="!load">Send</p>
+            <img v-if="load" src="~/assets/icons/oval.svg" alt="spinner icon" class="w-6">
           </button>
         </form>
         <div v-if="response !== ''" class="success-error bg-white w-full h-56 mt-12 flex items-center justify-center">
@@ -121,8 +122,82 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content:
-            'Send me a simple message. It can be just to say hello or leave me a cute motivation message'
+          content: 'Send me a simple message. It can be just to say hello or leave me a cute motivation message'
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@nuxt_js'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@dams9ix'
+        },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: 'https://damsx.netlify.app/contacts/en'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Contact me - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Send me a simple message. It can be just to say hello or leave me a cute motivation message'
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: 'Adams Aimé-Désiré logo'
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'Portfolio - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://damsx.netlify.app/contacts/en'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Contact me - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'Send me a simple message. It can be just to say hello or leave me a cute motivation message'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
+        },
+        {
+          hid: 'og:image:alt',
+          name: 'og:image:alt',
+          content: 'Adams Aimé-Désiré logo'
         }
       ]
     }
@@ -130,6 +205,7 @@ export default {
   data () {
     return {
       open: false,
+      load: false,
       fullname: '',
       email: '',
       message: '',
@@ -143,6 +219,7 @@ export default {
     async sendMessage (e) {
       try {
         e.preventDefault()
+        this.load = true
         const data = {
           fullname: this.fullname,
           email: this.email,
@@ -171,6 +248,10 @@ textarea {
 }
 
 body.dark form {
+  color: #131313;
+}
+
+body.dark .success-error p {
   color: #131313;
 }
 

@@ -44,7 +44,10 @@
           <div class="message mt-3">
             <textarea v-model="message" name="message" id="message" placeholder="Message" class="px-2 pt-2 border-2 border-gray-300 focus focus:border-myblack w-full h-28"></textarea>
           </div>
-          <button type="submit" id="submit" class="mt-3 bg-myblack text-mygray w-full h-11 font-semibold" @click="sendMessage">Envoyer</button>
+          <button type="submit" id="submit" class="mt-3 bg-myblack flex items-center justify-center text-mygray w-full h-11 font-semibold" @click="sendMessage">
+            <p v-if="!load">Envoyer</p>
+            <img v-if="load" src="~/assets/icons/oval.svg" alt="spinner icon" class="w-6">
+          </button>
         </form>
         <div v-if="response !== ''" class="success-error bg-white w-full h-56 mt-12 flex items-center justify-center">
           <p class="text-xl font-medium text-center">{{ response.messageFr }}</p>
@@ -65,8 +68,82 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content:
-            'Envoyez moi un simple message. ça peut etre juste pour dire bonjour ou un simple message de motivation.'
+          content: 'Envoyez moi un simple message. ça peut etre juste pour dire bonjour ou un simple message de motivation.'
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@nuxt_js'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@dams9ix'
+        },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: 'https://damsx.netlify.app/contacts/fr'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Contactez moi - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Envoyez moi un simple message. ça peut etre juste pour dire bonjour ou un simple message de motivation.'
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: 'Adams Aimé-Désiré logo'
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'Portfolio - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://damsx.netlify.app/contacts/fr'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Contactez moi - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'Envoyez moi un simple message. ça peut etre juste pour dire bonjour ou un simple message de motivation.'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
+        },
+        {
+          hid: 'og:image:alt',
+          name: 'og:image:alt',
+          content: 'Adams Aimé-Désiré logo'
         }
       ]
     }
@@ -74,6 +151,7 @@ export default {
   data () {
     return {
       open: false,
+      load: false,
       fullname: '',
       email: '',
       message: '',
@@ -87,21 +165,11 @@ export default {
     async sendMessage (e) {
       try {
         e.preventDefault()
-        const sendBtn = document.querySelector('#submit')
-        if (this.fullname === '' || this.email === '' || this.message === '') {
-          sendBtn.style.pointerEvents = 'none'
-          sendBtn.style.backgroundColor = 'red'
-        } else {
-          sendBtn.style.pointerEvents = 'all'
-          sendBtn.style.backgroundColor = 'blue'
-          const data = {
-            fullname: this.fullname,
-            email: this.email,
-            message: this.message
-          }
-          await axios.post('https://damsx.herokuapp.com/api/post/message', data).then((response) => {
-            this.response = response.data
-          })
+        this.load = true
+        const data = {
+          fullname: this.fullname,
+          email: this.email,
+          message: this.message
         }
       } catch (error) {
         console.log(error)
@@ -121,6 +189,10 @@ textarea {
 }
 
 body.dark form {
+  color: #131313;
+}
+
+body.dark .success-error p {
   color: #131313;
 }
 

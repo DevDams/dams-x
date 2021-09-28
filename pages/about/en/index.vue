@@ -97,7 +97,82 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Adams Aimé-Désiré, front-end developer. Let\'s wrok together and build awesome stuff'
+          content: 'Adams Aimé-Désiré, javascript front-end developer. Let\'s wrok together and build awesome stuff'
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@nuxt_js'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@dams9ix'
+        },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: 'https://damsx.netlify.app/about/en'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'About - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Adams Aimé-Désiré, javascript front-end developer. Let\'s wrok together and build awesome stuff'
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: 'Adams Aimé-Désiré logo'
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'Portfolio - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://damsx.netlify.app/about/en'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'About - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'Adams Aimé-Désiré, javascript front-end developer. Let\'s wrok together and build awesome stuff'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
+        },
+        {
+          hid: 'og:image:alt',
+          name: 'og:image:alt',
+          content: 'Adams Aimé-Désiré logo'
         }
       ]
     }

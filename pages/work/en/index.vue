@@ -89,7 +89,7 @@
       >
         <div class="w-11/12 sm:w-1/2 sm:pl-8 md:pl-16 mt-6 sm:mt-0 pr-6 py-4">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">
-            <a href="https://muse-x.netlify.app/" target="_blank">Muse-X</a>
+            <a href="https://muse-x.netlify.app/profil" target="_blank">Muse-X (in progress)</a>
           </h2>
           <h3 class="font-semibold text-md lg:text-lg mt-4">
             #NuxtJS #CSS #TailwindCss #Node #mongoDB #Cloudinary #Fullstack
@@ -129,6 +129,81 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'See here all the awesome personal project I build'
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@nuxt_js'
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@dams9ix'
+        },
+        {
+          hid: 'twitter:url',
+          name: 'twitter:url',
+          content: 'https://damsx.netlify.app/work/en'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'My work - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'See here all the awesome personal project I build'
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: 'Adams Aimé-Désiré logo'
+        },
+        {
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'Portfolio - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://damsx.netlify.app/work/en'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'My work - Adams Aimé-Désiré'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'See here all the awesome personal project I build'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
+        },
+        {
+          hid: 'og:image:alt',
+          name: 'og:image:alt',
+          content: 'Adams Aimé-Désiré logo'
         }
       ]
     }
