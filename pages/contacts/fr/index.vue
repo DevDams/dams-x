@@ -171,6 +171,9 @@ export default {
           email: this.email,
           message: this.message
         }
+        await axios.post('https://damsx.herokuapp.com/api/post/message', data).then((response) => {
+          this.response = response.data
+        })
       } catch (error) {
         console.log(error)
       }
