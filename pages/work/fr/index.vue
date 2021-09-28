@@ -87,7 +87,7 @@
       >
         <div class="w-11/12 sm:w-1/2 sm:pl-8 md:pl-16 mt-6 sm:mt-0 pr-6 py-4">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">
-            <a href="https://muse-x.netlify.app/" target="_blank">Muse-X</a>
+            <a href="https://muse-x.netlify.app/profil" target="_blank">Muse-X (en cours)</a>
           </h2>
           <h3 class="font-semibold text-md lg:text-lg mt-4">
             #NuxtJS #CSS #TailwindCss #Node #mongoDB #Cloudinary #Fullstack
