@@ -64,7 +64,7 @@ export default {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: 'https://damsx.netlify.app/_nuxt/img/big-logo.053ce4c.png'
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
         },
         {
           hid: 'twitter:image:alt',
@@ -99,7 +99,7 @@ export default {
         {
           hid: 'og:image',
           name: 'og:image',
-          content: 'https://damsx.netlify.app/_nuxt/img/big-logo.053ce4c.png'
+          content: 'https://res.cloudinary.com/dams9ix/image/upload/v1632838794/logo_kxkl24.png'
         },
         {
           hid: 'og:image:alt',
