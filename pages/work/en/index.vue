@@ -62,7 +62,7 @@
         class="container mx-auto flex flex-col sm:flex-row items-center h-auto sm:h-96 mt-16 sm:mt-24"
       >
         <div class="w-11/12 sm:w-1/2 h-full flex items-center">
-          <a href="http://hi-shared.herokuapp.com/" target="_blank">
+          <a href="https://hi-share.herokuapp.com/" target="_blank">
             <img src="~/assets/images/hi-share.png" alt="screenshot of project">
           </a>
         </div>
